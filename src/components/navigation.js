@@ -6,6 +6,8 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import Logo from "../assets/img/logo.png";
+import TextLogo from "../assets/img/type_logo.png";
 
 class Navigation extends React.Component {
 
@@ -45,6 +47,15 @@ class Navigation extends React.Component {
                     <Navbar.Brand href="./">
                         <img
                             id="logo"
+                            src={Logo}
+                            className = "logo-icon"
+                            onClick={() => this.navigate('home')}
+                        />
+                        <img
+                            id="logo"
+                            src={TextLogo}
+                            className = "text-logo"
+                            onClick={() => this.navigate('home')}
                         />
                     </Navbar.Brand>
                     <Navbar.Collapse id="responsive-navbar-nav">

@@ -64,7 +64,7 @@ class Home extends React.Component {
                                 how they advertise and how users can depend on it.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta">Test now</Button>
+                        <Button href="#claim" className="helper-btn cta-a">to go faq</Button>
 
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
@@ -75,7 +75,7 @@ class Home extends React.Component {
                                 how they advertise and how users can depend on it.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta">Test now</Button>
+                        <Button href="#claim" className="helper-btn cta-a">analyse an influencer</Button>
 
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
@@ -86,7 +86,7 @@ class Home extends React.Component {
                                 how they advertise and how users can depend on it.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta">Test now</Button>
+                        <Button href="#claim" className="helper-btn cta-a">analyse yourself</Button>
 
                     </div>
                 </div>

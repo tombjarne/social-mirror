@@ -189,6 +189,23 @@ a, button {
   color: white;
 }
 
+.logo-icon {
+  height: 20px !important;
+  width: 20px !important;
+  margin-left: 10px;
+}
+
+.text-logo {
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.cta-a {
+  border: 2px solid var(--button-color);
+  text-decoration: none;
+  color: white;
+}
+
 #vertical-separator {
   width: 50vw;
 }
@@ -378,6 +395,12 @@ header .menuIcon {
 }
 
 #responsive-navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
   display: flex;
   justify-content: center;
   align-items: center;
