@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebdd4903-3aa7-45cb-9987-1c4807fd395f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/type_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/home.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593602424803</updated>
-      <workItem from="1593602427890" duration="17327000" />
+      <workItem from="1593602427890" duration="18907000" />
     </task>
     <task id="LOCAL−00001" summary="add landingpage">
       <created>1593620808704</created>
@@ -98,7 +95,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1593620808704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="added logo to nav">
+      <created>1593621735410</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1593621735410</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add landingpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add landingpage" />
+    <MESSAGE value="added logo to nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logo to nav" />
   </component>
 </project>

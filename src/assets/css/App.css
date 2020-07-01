@@ -102,11 +102,10 @@ a, button {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  right: 15px;
-  top: 55px;
+  top: 50px;
   background-color: var(--background-color-light);
   padding: 15px;
-  border-radius: 15px;
+  width: 100vw;
 }
 
 #footer-wrapper {
@@ -152,10 +151,11 @@ a, button {
 
 #pages span {
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
-#pages span:hover {
-  color: aliceblue;
+.page-links:hover {
+  color: var(--highlight-color)!important;
 }
 
 /* HERO SHOT */
@@ -387,6 +387,8 @@ header .menuIcon {
 #nav {
   flex-direction: row;
   height: 50px;
+  position: fixed;
+  width: 100vw;
 }
 
 .nav-link {
@@ -404,24 +406,37 @@ header .menuIcon {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 10px;
 }
 
 .input-group {
   margin-right: 85px;
+  position: absolute;
+  right: 20px !important;
+  top: -3px;
 }
 
 .input-group input {
-  padding: 10px;
-  border-radius: 10px;
+  padding: 11px;
   border: none;
+  border-radius: 25px;
 }
 
 .input-group button {
-  font-size: 12px;
-  padding: 10px;
+  font-size: 11px;
+  padding: 11px;
   border: none;
   background-color: var(--button-color);
   color: white;
+}
+
+.btn-primary {
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--txt-highlight);
 }
 
 /* HOME */
@@ -479,6 +494,10 @@ header .menuIcon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.form-control {
+  margin-right: -35px;
 }
 
 #home-info {

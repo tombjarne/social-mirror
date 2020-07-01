@@ -44,6 +44,16 @@ class Navigation extends React.Component {
                             <div className="menu-icon"></div>
                         </div>
                     </Navbar.Toggle>
+                    <Form inline>
+                        <InputGroup>
+                            <FormControl
+                                placeholder="Username"
+                                aria-label="Username"
+                                aria-describedby="basic-addon1"
+                            />
+                            <Button type="submit">Submit</Button>
+                        </InputGroup>
+                    </Form>
                     <Navbar.Brand href="./">
                         <img
                             id="logo"
@@ -60,24 +70,14 @@ class Navigation extends React.Component {
                     </Navbar.Brand>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Form inline>
-                            <InputGroup>
-                                <FormControl
-                                    placeholder="Username"
-                                    aria-label="Username"
-                                    aria-describedby="basic-addon1"
-                                />
-                                <Button type="submit">Submit</Button>
-                                </InputGroup>
-                            </Form>
                             {
                                 this.state.expanded == true &&
                                 (
                                     <article id="menu-wrapper">
                                         <div id="pages">
-                                            <span onClick={() => this.navigate('home')}>Home</span>
-                                            <span onClick={() => this.navigate('mirror')}>Analysis</span>
-                                            <span onClick={() => this.navigate('faq')}>FAQ</span>
+                                            <span className="page-links" onClick={() => this.navigate('home')}>Home</span>
+                                            <span className="page-links" onClick={() => this.navigate('mirror')}>Analysis</span>
+                                            <span className="page-links" onClick={() => this.navigate('faq')}>FAQ</span>
                                         </div>
                                     </article>
                                 )
