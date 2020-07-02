@@ -11,7 +11,7 @@ class Footer extends React.Component {
             <div id="footer-wrapper">
                 <Navbar id="footer-nav" bg="light" expand="xl" collapseOnSelect>
                     <div id="pages">
-                        <span onClick={() => this.navigate('home')}>Home</span>
+                        <span onClick={() => this.navigate('')}>Home</span>
                         <span onClick={() => this.navigate('mirror')}>Analysis</span>
                         <span onClick={() => this.navigate('faq')}>FAQ</span>
                     </div>

@@ -7,10 +7,6 @@
         display: none;
     }
 
-    #home .claim-overlay {
-        display: none;
-    }
-
     #home .home-feature-list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -98,10 +94,6 @@
     #hero-cta h1,
     #hero-cta p {
         text-align: left !important;
-    }
-
-    .input-group {
-        display: none;
     }
 
     #vertical-separator {

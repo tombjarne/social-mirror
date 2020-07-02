@@ -24,6 +24,34 @@ a, button {
   align-items: center;
 }
 
+.icon-wrapper div:hover {
+  background-color: var(--background-a);
+  cursor: pointer;
+}
+
+.play {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.light-bg {
+  background-color: var(--background-color-light)!important;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#widget2 {
+  border-radius: 25px;
+  background-color: var(--background-color-light);
+  padding: 5px;
+}
+
+.big-title {
+  font-size: 36px;
+}
+
 .icon-wrapper-big {
   background-color: white;
   border-radius: 100px;
@@ -96,6 +124,18 @@ a, button {
   color: var(--receiver-color);
 }
 
+#reg-page {
+  flex-direction: column !important;
+}
+
+#sidebar-wrapper {
+  position: absolute;
+  right: 0px;
+  top: 40vh;
+  height: 20vh;
+  width: 5vw;
+}
+
 #menu-wrapper {
   display: flex;
   justify-content: center;
@@ -103,9 +143,22 @@ a, button {
   flex-direction: column;
   position: absolute;
   top: 50px;
+  left: 0px;
   background-color: var(--background-color-light);
   padding: 15px;
   width: 100vw;
+}
+
+#sidebar {
+  width: 65vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: var(--background-a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #footer-wrapper {
@@ -278,6 +331,11 @@ a, button {
   display: flex !important;
   justify-content: center;
   align-items: center;
+  margin: 3px !important;
+}
+
+#video-player {
+  margin: 0px;
 }
 
 * {
@@ -384,11 +442,105 @@ header .menuIcon {
   z-index: 10;
 }
 
+#sidebar-responsive-wrapper {
+  position: fixed;
+  right: 0px;
+  top: 35vh;
+  width: 30px;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--background-a);
+  border-radius: 25px 0px 0px 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#sidebar-responsive-wrapper:hover {
+  background-color: var(--button-color);
+}
+
+#sidebar-nav:hover > #sidebar-responsive-wrapper-extended {
+  background-color: var(--button-color);
+}
+
+#button-tooltip {
+  background-color: white;
+  width: 32vw;
+  height: 32vh;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+#button-tooltip p {
+  color: var(--background-color);
+}
+
+#sidebar-responsive-wrapper-extended {
+  position: fixed;
+  right: 0px;
+  top: 35vh;
+  width: 5vw;
+  margin-right: 62vw;
+  padding: 0px;
+  background-color: var(--background-a);
+  border-radius: 25px 0px 0px 25px;
+  z-index: 10;
+}
+
+#sidebar-toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 19vh;
+  background-color: var(--background-a);
+  padding: 3px;
+  border-radius: 25px;
+  cursor: pointer;
+  right: 25px;
+}
+
+.sidebar-feature {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 5px !important;
+}
+
+.sidebar-feature:hover {
+  background-color: var(--background-color);
+}
+
+.bright {
+  background-color: white;
+}
+
+#sidbar-nav {
+  height: 40vh;
+}
+
 #nav {
   flex-direction: row;
   height: 50px;
-  position: fixed;
   width: 100vw;
+}
+
+#sidebar-nav {
+  flex-direction: row;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar-nav {
+  width: 10vw !important;
 }
 
 .nav-link {
@@ -396,10 +548,15 @@ header .menuIcon {
   margin-right: 5px;
 }
 
-#responsive-navbar-nav {
+#responsive-navbar-nav,
+#responsive-sidebar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#responsive-sidebar-nav {
+  right: 80px !important;
 }
 
 .navbar-brand {
@@ -411,10 +568,17 @@ header .menuIcon {
 }
 
 .input-group {
-  margin-right: 85px;
-  position: absolute;
-  right: 20px !important;
-  top: -3px;
+  width: 140px;
+  margin: 0px!important;
+  padding: 0px!important;
+}
+
+.form-control {
+
+}
+
+.form-inline {
+  width: 50vw;
 }
 
 .input-group input {
@@ -494,10 +658,6 @@ header .menuIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.form-control {
-  margin-right: -35px;
 }
 
 #home-info {

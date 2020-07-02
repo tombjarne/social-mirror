@@ -8,6 +8,7 @@ import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import Logo from "../assets/img/logo.png";
 import TextLogo from "../assets/img/type_logo.png";
+import {useHistory} from "react-router";
 
 class Navigation extends React.Component {
 
@@ -21,11 +22,6 @@ class Navigation extends React.Component {
         };
 
         this.toggleNavbar = this.toggleNavbar.bind(this);
-    }
-
-    navigate( view ) {
-        const { history } = this.props
-        view && history.push( view )
     }
 
     toggleNavbar() {
@@ -46,28 +42,16 @@ class Navigation extends React.Component {
                             <div className="menu-icon"></div>
                         </div>
                     </Navbar.Toggle>
-                    <Form inline>
-                        <InputGroup>
-                            <FormControl
-                                placeholder="Username"
-                                aria-label="Username"
-                                aria-describedby="basic-addon1"
-                            />
-                            <Button type="submit" >Submit</Button>
-                        </InputGroup>
-                    </Form>
                     <Navbar.Brand href="./">
                         <img
                             id="logo"
                             src={Logo}
                             className = "logo-icon"
-                            onClick={() => this.navigate('home')}
                         />
                         <img
                             id="logo"
                             src={TextLogo}
                             className = "text-logo"
-                            onClick={() => this.navigate('home')}
                         />
                     </Navbar.Brand>
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -77,9 +61,9 @@ class Navigation extends React.Component {
                                 (
                                     <article id="menu-wrapper">
                                         <div id="pages">
-                                            <span className="page-links" onClick={() => this.navigate('home')}>Home</span>
-                                            <span className="page-links" onClick={() => this.navigate('mirror')}>Analysis</span>
-                                            <span className="page-links" onClick={() => this.navigate('faq')}>FAQ</span>
+                                            <span className="page-links" onClick={() => window.location.href='/'}>Home</span>
+                                            <span className="page-links" onClick={() => window.location.href='analysis'}>Analysis</span>
+                                            <span className="page-links" onClick={() => window.location.href='knowledge'}>Knowledge</span>
                                         </div>
                                     </article>
                                 )

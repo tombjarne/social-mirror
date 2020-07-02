@@ -3,8 +3,11 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navigation from "./components/navigation";
 import Home from "./components/pages/home";
-import Mirror from "./components/pages/mirror";
-import Faq from "./components/pages/faq";
+import Analysis from "./components/pages/mirror";
+import Knowledge from "./components/pages/faq";
+import Hottopics from "./components/pages/hottopics"
+import Statistics from "./components/pages/statistics"
+import Eprivacy from "./components/pages/eprivacy"
 
 import"./assets/css/media-queries.css";
 import "./assets/css/App.css";
@@ -16,9 +19,12 @@ function App() {
         <BrowserRouter>
             <Navigation />
                 <Switch>
+                    <Route path="/analysis" component={Analysis} />
+                    <Route path="/knowledge" component={Knowledge} />
+                    <Route path="/hottopics" component={Hottopics} />
+                    <Route path="/statistics" component={Statistics} />
+                    <Route path="/eprivacy" component={Eprivacy} />
                     <Route path="/" component={Home}/>
-                    <Route path="/mirror" component={Mirror} />
-                    <Route path="/faq" component={Faq} />
                 </Switch>
             <Footer />
         </BrowserRouter>
