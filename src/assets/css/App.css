@@ -128,6 +128,35 @@ a, button {
   flex-direction: column !important;
 }
 
+.pagination {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page-item {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-link {
+  text-decoration: none;
+  color: white;
+}
+
+.sr-only {
+  display: none;
+}
+
 #sidebar-wrapper {
   position: absolute;
   right: 0px;
