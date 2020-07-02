@@ -9,6 +9,47 @@ import Button from "react-bootstrap/Button";
 import Logo from "../assets/img/logo.png";
 import TextLogo from "../assets/img/type_logo.png";
 
+
+//globals
+
+var instaLink = "https://instagram.com/";
+var webdriver = require("selenium-webdriver"),
+    SeleniumServer = require("selenium-webdriver/remote").SeleniumServer;
+var caps = {
+    name: 'Instagram',
+    build: '1.0',
+    version: '70',
+    platform: 'Windows 10',
+    screen_resolution: '1366x768',
+    browserName: 'Chrome',
+}
+
+//functions
+
+async function sendRequest() {
+    try {
+        var driver = new webdriver.Builder()
+            .usingServer(instaLink)
+            .withCapabilities(caps)
+            .build()
+
+        await driver.get(instaLink);
+
+        await driver.getTitle().then(function (title) {
+            console.log(title);
+        });
+
+        await driver.quit();
+    } catch(err) {
+        handleFailure(err,driver);
+    }
+}
+
+function handleFailure(err,driver) {
+    console.error(err.stack);
+    driver.quit();
+}
+
 class Navigation extends React.Component {
 
     constructor(props) {
@@ -34,6 +75,24 @@ class Navigation extends React.Component {
         });
     }
 
+    updateRequestStatus() {
+        this.state.submitRequest == true;
+        fetchInstagramUser(this.state.userName);
+    }
+
+    fetchInstagramUser(input){
+        this.state.userName = input;
+        if(this.state.submitRequest == true) {
+            let userName = input;
+            let requestLink = instaLink.concat(input);
+
+            console.log(userName);
+            console.log(requestLink);
+
+            sendRequest();
+        }
+    }
+
     render() {
 
         return (
@@ -52,6 +111,7 @@ class Navigation extends React.Component {
                                 placeholder="Username"
                                 aria-label="Username"
                                 aria-describedby="basic-addon1"
+                                onChange={evt => this.fetchInstagramUser(evt)}
                             />
                             <Button type="submit" >Submit</Button>
                         </InputGroup>
