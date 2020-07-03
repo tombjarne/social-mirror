@@ -2,6 +2,7 @@ import React from "react";
 
 import Progress from "progress";
 import Generic from "./questions/generic";
+import Generic1 from "./questions/generic1";
 import Pagination from "react-bootstrap/Pagination";
 
 class Test extends React.Component {
@@ -13,6 +14,7 @@ class Test extends React.Component {
             current: 1,
             pages: [
                 <Generic />,
+                <Generic1 />
             ]
         };
     }
@@ -55,14 +57,14 @@ class Test extends React.Component {
         }
 
         return (
-            <div id="reg-page" className="claim-actions double-feature">
+            <div id="reg-page" className="claim-actions double-feature test-page">
                 <h1 className="big-title">Take the test</h1>
                 <div id="test" className="wrapper">
                     <div id="page-wrapper">
                         <p>Question {this.state.current}/10</p>
                         <Pagination>{items}</Pagination>
                     </div>
-                    <div>
+                    <div className="question">
                         {this.state.pages[this.state.current -1]}
                     </div>
                 </div>

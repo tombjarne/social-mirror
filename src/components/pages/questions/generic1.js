@@ -5,7 +5,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormGroup from "react-bootstrap/FormGroup";
 import FormCheckInput from "react-bootstrap/FormCheckInput";
 
-class Generic extends React.Component {
+class Generic1 extends React.Component {
 
     constructor(props) {
 
@@ -35,13 +35,12 @@ class Generic extends React.Component {
     render() {
         return (
             <section className="question-container">
-                <h2>Frage 1:</h2>
-                <p className="slim-text centered">Hast du schon einmal ein Produkt eines Influencers gekauft?</p>
+                <h2>Frage 2:</h2>
+                <p className="slim-text centered">Hast du schon einmal einen Influencer beabsichtigt getroffen?</p>
                 <div className="answer-container">
                     <FormGroup>
                         <Button className={`test-btn btn${this.state.highlighted[0] === false ? "" : "-highlighted"}`} onClick={() => this.setChosen(0)} >Nein</Button>
                         <Button className={`test-btn btn${this.state.highlighted[1] === false ? "" : "-highlighted"}`} onClick={() => this.setChosen(1)} >Ja, einmal</Button>
-                        <Button className={`test-btn btn${this.state.highlighted[2] === false ? "" : "-highlighted"}`} onClick={() => this.setChosen(2)} >Ja, mehrmals</Button>
                     </FormGroup>
                 </div>
             </section>
@@ -49,4 +48,4 @@ class Generic extends React.Component {
     }
 }
 
-export default Generic;
+export default Generic1;

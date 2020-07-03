@@ -22,7 +22,7 @@ function App() {
                 <Switch>
                     <Route path="/analysis" component={Analysis} />
                     <Route path="/knowledge" component={Knowledge} />
-                    <Route path="/hottopics" component={Hottopics} />
+                    <Route path="/topics" component={Hottopics} />
                     <Route path="/statistics" component={Statistics} />
                     <Route path="/eprivacy" component={Eprivacy} />
                     <Route path="/test" component={Test} />

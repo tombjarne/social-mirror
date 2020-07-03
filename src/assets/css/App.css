@@ -128,6 +128,25 @@ a, button {
   flex-direction: column !important;
 }
 
+.test-page {
+  height: 90vh;
+  justify-content: unset !important;
+}
+
+.test-btn {
+  border: none;
+  width: 15vw;
+}
+
+.test-btn:hover {
+  background-color: var(--button-color);
+}
+
+.answer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .pagination {
   list-style: none;
   display: flex;
@@ -141,7 +160,19 @@ a, button {
   cursor: pointer;
 }
 
+.question {
+  background-color: var(--background-a);
+  padding: 30px;
+  border-radius: 15px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #page-wrapper {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +228,6 @@ a, button {
   flex-direction: column;
   background-color: var(--background-color-light);
   padding: 15px;
-  border-radius: 15px;
 }
 
 .menu-icon {
@@ -456,7 +486,7 @@ header .menuIcon {
   padding: 20px 22px;
   font-size: 16px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 0px 10px 0px 10px;
   border-radius: 10px;
 }
 
@@ -464,6 +494,22 @@ header .menuIcon {
 #nav-wrapper {
   width: 100vw;
 }
+
+.centered {
+  text-align: center !important;
+}
+
+/*
+#test {
+  position: absolute;
+  top: 100px;
+}
+
+#reg-page h1 {
+  position: absolute;
+  top: 50px;
+}
+ */
 
 #nav-wrapper,
 #logo {
@@ -628,10 +674,6 @@ header .menuIcon {
   cursor: pointer;
 }
 
-.btn-primary:hover {
-  background-color: var(--txt-highlight);
-}
-
 /* HOME */
 #home #claim {
   position: relative;
@@ -667,6 +709,17 @@ header .menuIcon {
   height: 100%;
   width: 100%;
   z-index: -1;
+}
+
+.btn-highlighted {
+  background-color: var(--button-color);
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #home #claim h1,

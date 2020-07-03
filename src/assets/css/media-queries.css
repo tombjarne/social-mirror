@@ -59,10 +59,6 @@
         justify-content: center;
     }
 
-    .slim-text {
-        width: 90vw !important;
-    }
-
     .claim-actions {
         align-items: initial !important;
     }
@@ -107,6 +103,31 @@
 
     #hero-cta p {
         text-align: center;
+    }
+
+    .question {
+        width: 85vw !important;
+    }
+
+    .test-btn {
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .answer-container {
+        justify-content: space-evenly !important;
+        flex-direction: column;
+    }
+
+    .answer-container button {
+        width: 80vw;
+        margin-top: 15px;
+    }
+
+    .slim-text {
+        width: 75vw !important;
     }
 }
 

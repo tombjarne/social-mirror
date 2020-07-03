@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebdd4903-3aa7-45cb-9987-1c4807fd395f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/mirrortest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/questions/generic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/questions/generic1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/media-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/media-queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/mirrortest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/mirrortest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/questions/generic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/questions/generic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1593635336008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Implement basic questionnaire with pagination">
+      <created>1593720728123</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1593720728123</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,8 @@
     <MESSAGE value="add landingpage" />
     <MESSAGE value="added logo to nav" />
     <MESSAGE value="fixed navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed navigation" />
+    <MESSAGE value="Implement basic questionnaire with pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement basic questionnaire with pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" />
