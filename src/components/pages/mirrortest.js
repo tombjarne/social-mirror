@@ -1,8 +1,5 @@
 import React from "react";
 
-import Progress from "progress";
-import Generic from "./questions/generic";
-import Generic1 from "./questions/generic1";
 import Pagination from "react-bootstrap/Pagination";
 import twitter from "../../assets/img/twitter.png";
 import facebook from "../../assets/img/facebook.png";

@@ -1,9 +1,7 @@
 import React from "react";
 
 import Button from "react-bootstrap/Button";
-import influencer from "../../assets/img/users-solid.svg";
 import elon from "../../assets/img/elon-musk-profilbild.jpg";
-import money from "../../assets/img/money-check-alt-solid.svg";
 import work from "../../assets/img/hard-work.png";
 import jokes from "../../assets/img/memes.png";
 import ReactPlayer from "react-player";

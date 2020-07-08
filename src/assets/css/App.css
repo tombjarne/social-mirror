@@ -507,6 +507,13 @@ body {
   background-color: #DC143C !important;
 }
 
+.helper-btn {
+  text-decoration: none;
+  color: white;
+  border: 2px solid var(--button-color);
+  margin-bottom: 15px !important;
+}
+
 .cta-a:hover {
   background-color: var(--button-color);
 }

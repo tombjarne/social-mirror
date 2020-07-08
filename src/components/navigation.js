@@ -2,13 +2,8 @@ import React from "react";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-import Button from "react-bootstrap/Button";
 import Logo from "../assets/img/logo.png";
 import TextLogo from "../assets/img/type_logo.png";
-import {useHistory} from "react-router";
 
 class Navigation extends React.Component {
 
@@ -62,8 +57,8 @@ class Navigation extends React.Component {
                                     <article id="menu-wrapper">
                                         <div id="pages">
                                             <span className="page-links" onClick={() => window.location.href='/'}>Home</span>
-                                            <span className="page-links" onClick={() => window.location.href='analysis'}>Test</span>
-                                            <span className="page-links" onClick={() => window.location.href='knowledge'}>Wissen</span>
+                                            <span className="page-links" onClick={() => window.location.href='test'}>Test</span>
+                                            <span className="page-links" onClick={() => window.location.href='wissen'}>Wissen</span>
                                             <span className="page-links" onClick={() => window.location.href='knowledge'}>Monitoring</span>
                                         </div>
                                     </article>

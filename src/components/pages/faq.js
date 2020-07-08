@@ -1,11 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import user from "../../assets/img/user-alt-solid.svg";
 import money from "../../assets/img/money-check-alt-solid.svg";
-import influencer from "../../assets/img/users-solid.svg";
 import Sidebar from "../sidebar";
 import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Button from "react-bootstrap/Button";
 
 class Knowledge extends React.Component {
@@ -52,52 +49,12 @@ class Knowledge extends React.Component {
         return (
             <div id="reg-page" className="claim-actions double-feature">
                 <Sidebar />
-                <h1 className="big-title">Frequently asked questions</h1>
+                <h1 className="big-title">Wissen</h1>
                 <div className="wrapper">
-                    <h2>Browse available information</h2>
-                    <div className="icon-container light-bg">
-                        <div className="icon-wrapper">
-                            <OverlayTrigger
-                                overlay={renderTooltip}
-                                placement="bottom"
-                            >
-                                <div href="#general">
-                                    <img
-                                        id="small-img" className="icon" alt="" src={user}
-                                    />
-                                </div>
-                            </OverlayTrigger>
-                            <p>General</p>
-                        </div>
-                        <div className="icon-wrapper">
-                            <OverlayTrigger
-                                overlay={renderTooltip}
-                                placement="bottom"
-                            >
-                                <div>
-                                    <img
-                                        className="icon" alt="" src={money}
-                                        href="monetezation"
-                                    />
-                                </div>
-                            </OverlayTrigger>
-                            <p>Monetezation</p>
-                        </div>
-                        <div className="icon-wrapper">
-                            <OverlayTrigger
-                                overlay={renderTooltip}
-                                placement="bottom"
-                            >
-                                <div>
-                                    <img
-                                        className="icon" alt="" src={influencer}
-                                        href="influencers"
-                                    />
-                                </div>
-                            </OverlayTrigger>
-                            <p>Influencers</p>
-                        </div>
-                    </div>
+                    <h2>Wähle eine Kategorie</h2>
+                    <Button href="/wissen/influencer" className="helper-btn">Influencer</Button>
+                    <Button href="/test" className="helper-btn">Social Media</Button>
+                    <Button href="/test" className="helper-btn-small">Gefahren</Button>
                     <div className="wrapper">
                         <h2 id="general">General</h2>
                         <p className="slim-text">

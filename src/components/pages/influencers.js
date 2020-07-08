@@ -6,9 +6,7 @@ import ad from "../../assets/img/werbung-symbol.png";
 import money from "../../assets/img/euro-symbol.png";
 import ex1 from "../../assets/img/instagram-example-1.jpg";
 import ex2 from "../../assets/img/instagram-example-2.jpg";
-import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
-import Form from "react-bootstrap/Form";
 import ReactPlayer from "react-player";
 
 class Influencers extends React.Component {
