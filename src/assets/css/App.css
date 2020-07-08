@@ -13,7 +13,7 @@ a, button {
 }
 
 .slim-text {
-  width: 40vw;
+  width: 35vw;
 }
 
 .icon-wrapper {
@@ -60,10 +60,7 @@ a, button {
   margin-top: 35px;
   font-size: 16px;
   color: var(--background-color-light);
-}
-
-.icon-wrapper p {
-  font-weight: bold;
+  width: 30vw;
 }
 
 .icon-wrapper div {
@@ -76,6 +73,18 @@ a, button {
   border-radius: 100px;
   padding: 10px
  }
+
+.fullwidth {
+  width: 80vw;
+}
+
+.fullwidth .input-group {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .icon-wrapper div img {
   height: 55px;
@@ -102,6 +111,7 @@ a, button {
 
 .icon-container-alternativ {
   flex-direction: column;
+  align-items: center;
 }
 
 /* NAVIGATION */
@@ -140,6 +150,14 @@ a, button {
 
 .test-btn:hover {
   background-color: var(--button-color);
+}
+
+.button-wrapper {
+  margin-top: 15px;
+}
+
+.button-wrapper a {
+  margin-left: 0px !important;
 }
 
 .test-btn-scala {
@@ -291,7 +309,8 @@ div button {
 #hero {
   display: flex;
   align-items: center;
-  height: 48vh;
+  height: 65vh;
+  background-image: url("./../../assets/img/phone-869669_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-color);
@@ -413,6 +432,11 @@ div button {
   margin: 0px;
 }
 
+#video-player-big {
+  width: 60vw !important;
+  height: 45vh !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -424,7 +448,11 @@ body {
 .helper-btn-small{
   text-decoration: none;
   color: white;
-  background-color: #DC143C;
+  background-color: #DC143C !important;
+}
+
+.cta-a:hover {
+  background-color: var(--button-color);
 }
 
 .App {
@@ -672,19 +700,59 @@ header .menuIcon {
   width: 50vw;
 }
 
-.input-group input {
+.input-group input,
+.large-input-group input {
   padding: 11px;
   border: none;
   border-radius: 25px;
 }
 
-.input-group button {
+.input-group button,
+.large-input-group button {
   font-size: 11px;
   padding: 11px;
   border: none;
   background-color: var(--button-color);
   color: white;
 }
+
+.large-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.slim-list {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+}
+
+.slim-list li {
+  background-color: var(--background-color-light);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.small-img {
+  width: 80vw;
+  background-color: white;
+  padding: 5px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.corrected-img {
+  margin-right: 6px;
+}
+
+.large-input-group input {
+  width: 30vw !important;
+}
+
+
 
 .btn-primary {
   cursor: pointer;
@@ -767,6 +835,14 @@ header .menuIcon {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.info-bright {
+  background-color: var(--background-a) !important;
+}
+
+.info-dark {
+  background-color: var(--background-color-light) !important;
 }
 
 .wrapper h2 {

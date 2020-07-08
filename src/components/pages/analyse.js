@@ -1,7 +1,6 @@
 import React from "react";
 
 import Button from "react-bootstrap/Button";
-
 import influencer from "../../assets/img/users-solid.svg";
 import user from "../../assets/img/user-alt-solid.svg";
 import money from "../../assets/img/money-check-alt-solid.svg";
@@ -10,19 +9,29 @@ import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 import ReactPlayer from "react-player";
 
-class Home extends React.Component {
+class Analyse extends React.Component {
 
     render() {
         return (
             <section id="home">
                 <div id="hero">
                     <div id="hero-cta">
-                        <h1>Bereit Social Media den Kampf anzusagen?</h1>
-                        <p className="slim-text">Wir helfen dir dabei dein digitales Leben zu strukturieren und die sozialen Medien einen besseren Ort für dich zu machen.
-                        Kostenfrei mit garantierten Belohnungen für deinen Fortschritt.</p>
-                        <div className="button-wrapper">
-                            <Button href="#claim" className="helper-btn">Teste dich</Button>
-                            <Button href="#claim" className="helper-btn-small">Erfahre mehr</Button>
+                        <div>
+                            <h1>Influencer</h1>
+                            <p className="slim-text">Influencer sind Personen oder Unternehmen, die auf Social Media besonders viele Follower oder Fans besitzen
+                                und Geld durch Werbung verdienen. Besonders für Firmen ist die Werbung durch Influencer heutzutage sehr interessant geworden.</p>
+                        </div>
+                        <div className="large-form-wrapper">
+                            <h2>Suche einen Influencer</h2>
+                            <div className="large-input-group">
+                                <FormControl
+                                    placeholder="Username"
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                    id="search-input"
+                                />
+                                <Button type="submit" onClick={() => window.location.href="./analyse"}>Suchen</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,37 +102,9 @@ class Home extends React.Component {
                         <Button href="#claim" className="helper-btn cta-a">Erfahre mehr</Button>
                     </div>
                 </div>
-
-                <div className="info-dark">
-                    <div className="wrapper">
-                        <h2>Mehr über Influencer</h2>
-                        <div className="icon-container-alternativ">
-                            <div className="icon-wrapper-big">
-                                <p className="info-box">Blick hinter die Kulissen</p>
-                            </div>
-                            <p className="slim-text">
-                                Wolltest du schon immer einmal deinem Lieblingsinfluencer auf den Zahn fühlen? Wir zeigen dir, wie Influencer ihr Geld verdienen und welche
-                                Mittel sie dazu benutzen. Probier es aus!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="info-bright">
-                    <div className="wrapper">
-                        <div className="icon-container-alternativ">
-                            <div className="icon-wrapper-big">
-                                <p className="info-box">Influencer</p>
-                            </div>
-                            <p className="slim-text">
-                                Erfahre mehr über den Beruf eines Influencers und lerne verschiedene Seiten der Arbeit auf Social Media kennen.
-                            </p>
-                        </div>
-                        <Button href="./" className="helper-btn cta-a">Erfahre mehr</Button>
-                    </div>
-                </div>
             </section>
         );
     }
 }
 
-export default Home;
+export default Analyse;

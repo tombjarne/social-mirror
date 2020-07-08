@@ -1,7 +1,6 @@
 import React from "react";
 
 import Button from "react-bootstrap/Button";
-
 import influencer from "../../assets/img/users-solid.svg";
 import user from "../../assets/img/user-alt-solid.svg";
 import money from "../../assets/img/money-check-alt-solid.svg";
@@ -10,20 +9,26 @@ import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 import ReactPlayer from "react-player";
 
-class Home extends React.Component {
+class Knowledge extends React.Component {
 
     render() {
         return (
             <section id="home">
                 <div id="hero">
                     <div id="hero-cta">
-                        <h1>Bereit Social Media den Kampf anzusagen?</h1>
-                        <p className="slim-text">Wir helfen dir dabei dein digitales Leben zu strukturieren und die sozialen Medien einen besseren Ort für dich zu machen.
-                        Kostenfrei mit garantierten Belohnungen für deinen Fortschritt.</p>
-                        <div className="button-wrapper">
-                            <Button href="#claim" className="helper-btn">Teste dich</Button>
-                            <Button href="#claim" className="helper-btn-small">Erfahre mehr</Button>
-                        </div>
+                        <Form className="fullwidth">
+                            <div className="form-wrapper">
+                                <h3>Suche einen Influencer</h3>
+                                <InputGroup>
+                                    <FormControl
+                                        placeholder="Username"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                    <Button type="submit" >Submit</Button>
+                                </InputGroup>
+                            </div>
+                        </Form>
                     </div>
                 </div>
                 <div id="demo">
@@ -93,37 +98,9 @@ class Home extends React.Component {
                         <Button href="#claim" className="helper-btn cta-a">Erfahre mehr</Button>
                     </div>
                 </div>
-
-                <div className="info-dark">
-                    <div className="wrapper">
-                        <h2>Mehr über Influencer</h2>
-                        <div className="icon-container-alternativ">
-                            <div className="icon-wrapper-big">
-                                <p className="info-box">Blick hinter die Kulissen</p>
-                            </div>
-                            <p className="slim-text">
-                                Wolltest du schon immer einmal deinem Lieblingsinfluencer auf den Zahn fühlen? Wir zeigen dir, wie Influencer ihr Geld verdienen und welche
-                                Mittel sie dazu benutzen. Probier es aus!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="info-bright">
-                    <div className="wrapper">
-                        <div className="icon-container-alternativ">
-                            <div className="icon-wrapper-big">
-                                <p className="info-box">Influencer</p>
-                            </div>
-                            <p className="slim-text">
-                                Erfahre mehr über den Beruf eines Influencers und lerne verschiedene Seiten der Arbeit auf Social Media kennen.
-                            </p>
-                        </div>
-                        <Button href="./" className="helper-btn cta-a">Erfahre mehr</Button>
-                    </div>
-                </div>
             </section>
         );
     }
 }
 
-export default Home;
+export default Knowledge;
