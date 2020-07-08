@@ -42,7 +42,7 @@ class Navigation extends React.Component {
                             <div className="menu-icon"></div>
                         </div>
                     </Navbar.Toggle>
-                    <Navbar.Brand href="./">
+                    <Navbar.Brand href="/">
                         <img
                             id="logo"
                             src={Logo}

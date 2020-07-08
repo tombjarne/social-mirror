@@ -11,9 +11,10 @@ class Footer extends React.Component {
             <div id="footer-wrapper">
                 <Navbar id="footer-nav" bg="light" expand="xl" collapseOnSelect>
                     <div id="pages">
-                        <span onClick={() => this.navigate('')}>Home</span>
-                        <span onClick={() => this.navigate('mirror')}>Analysis</span>
-                        <span onClick={() => this.navigate('faq')}>FAQ</span>
+                        <span className="page-links" onClick={() => window.location.href='/'}>Home</span>
+                        <span className="page-links" onClick={() => window.location.href='analysis'}>Test</span>
+                        <span className="page-links" onClick={() => window.location.href='knowledge'}>Wissen</span>
+                        <span className="page-links" onClick={() => window.location.href='knowledge'}>Monitoring</span>
                     </div>
                 </Navbar>
             </div>

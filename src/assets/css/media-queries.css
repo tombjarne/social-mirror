@@ -92,6 +92,18 @@
         width: 60vw !important;
     }
 
+    .image-container {
+        width: 80vw !important;
+    }
+
+    .image-container .test-btn {
+        width: 80vw !important;
+    }
+
+    .test-btn {
+        width: 65vw !important;
+    }
+
     #hero-cta h1,
     #hero-cta p {
         text-align: left !important;

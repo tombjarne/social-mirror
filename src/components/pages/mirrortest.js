@@ -4,13 +4,52 @@ import Progress from "progress";
 import Generic from "./questions/generic";
 import Generic1 from "./questions/generic1";
 import Pagination from "react-bootstrap/Pagination";
+import twitter from "../../assets/img/twitter.png";
+import facebook from "../../assets/img/facebook.png";
+import instagram from "../../assets/img/instagram.png";
+import youtube from "../../assets/img/yt_icon_rgb.png";
+import tiktok from "../../assets/img/tiktok-logo.png";
+import reddit from "../../assets/img/reddit.png";
 import Button from "react-bootstrap/Button";
 import FormGroup from "react-bootstrap/FormGroup";
 
 class Test extends React.Component {
+    e30 = false;
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            e1: false,
+            e2: false,
+            e3: false,
+            e4: false,
+            e5: false,
+            e6: false,
+            e7: false,
+            e8: false,
+            e9: false,
+            e10: false,
+            e11: false,
+            e12: false,
+            e13: false,
+            e14: false,
+            e15: false,
+            e16: false,
+            e17: false,
+            e18: false,
+            e19: false,
+            e20: false,
+            e21: false,
+            e22: false,
+            e23: false,
+            e24: false,
+            e25: false,
+            e26: false,
+            e27: false,
+            e28: false,
+            e29: false,
+        }
 
         const generic =
             <section className="question-container">
@@ -18,7 +57,7 @@ class Test extends React.Component {
                 <p className="slim-text centered">Hast du schon einmal ein Produkt eines Influencers gekauft?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Nein</Button>
                         <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja, einmal</Button>
                         <Button className="test-btn" onClick={() => this.setChosen(2)} >Ja, mehrmals</Button>
                     </FormGroup>
@@ -129,12 +168,42 @@ class Test extends React.Component {
                 <p className="slim-text centered">Wofür nutzt du die sozialen Medien?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Twitter</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Instagram</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >YouTube</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Facebook</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >TikTok</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reddit</Button>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={twitter}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Twitter</Button>
+                        </div>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={instagram}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Instagram</Button>
+                        </div>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={youtube}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >YouTube</Button>
+                        </div>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={facebook}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Facebook</Button>
+                        </div>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={tiktok}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >TikTok</Button>
+                        </div>
+                        <div className="image-container">
+                            <div>
+                                <img className="image-icon" src={reddit}/>
+                            </div>
+                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reddit</Button>
+                        </div>
                     </FormGroup>
                 </div>
             </section>;
@@ -189,12 +258,22 @@ class Test extends React.Component {
     this.setChosen = this.setChosen.bind(this);
 }
 
+    changeE1(){
+        this.setState({
+            e1: !this.state.e1,
+        })
+    }
+
     setChosen(value) {
-        this.state.answer = value;
+        /*this.state.answer = value;
         this.state.chosen[0] = this.state.answer;
         console.log(this.state.highlighted[value]);
         this.state.highlighted[value] = !this.state.highlighted[value]
         console.log(this.state.highlighted[value]);
+         */
+        this.setState({
+           value: !this.state.value,
+        });
     }
 
     navigate(current){

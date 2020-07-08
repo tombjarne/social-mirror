@@ -2,11 +2,10 @@ import React from "react";
 
 import Button from "react-bootstrap/Button";
 import influencer from "../../assets/img/users-solid.svg";
-import user from "../../assets/img/user-alt-solid.svg";
+import elon from "../../assets/img/elon-musk-profilbild.jpg";
 import money from "../../assets/img/money-check-alt-solid.svg";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-import Form from "react-bootstrap/Form";
+import work from "../../assets/img/hard-work.png";
+import jokes from "../../assets/img/memes.png";
 import ReactPlayer from "react-player";
 
 class Analyse extends React.Component {
@@ -14,23 +13,23 @@ class Analyse extends React.Component {
     render() {
         return (
             <section id="home">
-                <div id="hero">
+                <div id="hero-alternative">
                     <div id="hero-cta">
                         <div>
-                            <h1>Influencer</h1>
-                            <p className="slim-text">Influencer sind Personen oder Unternehmen, die auf Social Media besonders viele Follower oder Fans besitzen
-                                und Geld durch Werbung verdienen. Besonders für Firmen ist die Werbung durch Influencer heutzutage sehr interessant geworden.</p>
+                            <h1>Deine Wahl: </h1>
+                            <span className="highlight">@elonmusk</span>
+                            <p className="slim-text">Elon Musk ist ein kanadisch-US-amerikanischer Unternehmer. Besonders bekannt für
+                            <span className="txt-highlight"> Space X</span> und <span className="txt-highlight">Tesla</span></p>
                         </div>
-                        <div className="large-form-wrapper">
-                            <h2>Suche einen Influencer</h2>
-                            <div className="large-input-group">
-                                <FormControl
-                                    placeholder="Username"
-                                    aria-label="Username"
-                                    aria-describedby="basic-addon1"
-                                    id="search-input"
-                                />
-                                <Button type="submit" onClick={() => window.location.href="./analyse"}>Suchen</Button>
+                    </div>
+                </div>
+                <div className="info">
+                    <div className="wrapper">
+                        <div id="hero-cta">
+                            <div className="profile-wrapper">
+                                <img className="profile-img" src={elon}/>
+                                <h2>Elon Musk </h2>
+                                <span className="highlight">36,6 Mio. Follower</span>
                             </div>
                         </div>
                     </div>
@@ -38,28 +37,22 @@ class Analyse extends React.Component {
                 <div id="demo">
                     <div className="claim-overlay"></div>
                     <div className="wrapper">
-                        <h2>Das tun wir für Dich</h2>
+                        <h2>Elon Musk ist bekannt für</h2>
                         <div className="icon-container">
                             <div className="icon-wrapper">
                                 <div>
-                                    <img id="small-img" className="icon" alt="" src={user} />
+                                    <img id="small-img" className="icon" alt="" src={jokes} />
                                 </div>
-                                <h3>Monitoring</h3>
-                                <p className="centered">Wir helfen dir Deine Social Media Nutzung zu optimieren. Mehr Spaß in den Sozialen Medien in weniger Zeit!</p>
+                                <h3>Memes</h3>
+                                <p className="centered">Elon ist bekannt für seine humoristischen und sarkastischen Beiträge auf den sozialen Medien und im Fernsehen.</p>
                             </div>
                             <div className="icon-wrapper">
                                 <div>
-                                    <img className="icon" alt="" src={money} />
+                                    <img className="icon" alt="" src={work} />
                                 </div>
-                                <h3>Blick hinter die Kulissen</h3>
-                                <p className="centered">Wir geben dir einen Einblick in die Welt der Stars und Influencer und wie sie die sozialen Medien geschickt als Geldquelle nutzen</p>
-                            </div>
-                            <div className="icon-wrapper">
-                                <div>
-                                    <img className="icon" alt="" src={influencer} />
-                                </div>
-                                <h3>Influencer</h3>
-                                <p className="centered">Wie viel Einfluss haben Influencer? Was machen Influencer? Erfahre alles rund ums Thema Influencer</p>
+                                <h3>Harte Arbeit</h3>
+                                <p className="centered">Nach seinem Motto "work every waking hour" ist Elon ein sehr hart arbeitender Mensch, der sein Bestes gibt seine
+                                Firmen am Leben zu erhalten und grandiose Dinge zu erschaffen.</p>
                             </div>
                         </div>
                     </div>
@@ -67,27 +60,38 @@ class Analyse extends React.Component {
 
                 <div className="info">
                     <div className="wrapper">
-                        <h2>Probier's aus!</h2>
+                        <h2>Secrets</h2>
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
-                                <p className="info-box">Monitoring</p>
+                                <p className="info-box">Brand Deals</p>
                             </div>
                             <p>
-                                Zusammen sind wir stark! Wir helfen Dir dabei Social Media besser zu nutzen und mehr Spaß zu haben! Für jeden Fortschritt den du machst
-                                erhältst du außerdem coole Prämien und Preise.
+                                Keine Brand Deals bekannt.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta-a">Analysiere dein Profil</Button>
+                        <div className="icon-container-alternativ">
+                            <div className="icon-wrapper-big">
+                                <p className="info-box">Werbung</p>
+                            </div>
+                            <span href="https://www.tesla.com/" className="highlight-small">Tesla</span>
+                            <span href="https://www.spacex.com/" className="highlight-small">SpaceX</span>
+                            <span href="https://www.boringcompany.com/" className="highlight-small">The Boring Company</span>
+                        </div>
                     </div>
                 </div>
 
                 <div className="info">
                     <div className="wrapper">
-                        <h2>Was ist Social Media?</h2>
+                        <h2>Best of Elon Musk</h2>
                         <div className="icon-container-alternativ">
                             <div className="claim-actions">
                                 <div className="play">
-                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=E2q0V1VEj_c" />
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=lKUf7DCSImM" />
+                                </div>
+                            </div>
+                            <div className="claim-actions">
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=zK6FSK98asc" />
                                 </div>
                             </div>
                             <div className="icon-wrapper-big">

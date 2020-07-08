@@ -139,13 +139,38 @@ a, button {
 }
 
 .test-page {
-  height: 90vh;
   justify-content: unset !important;
 }
 
 .test-btn {
   border: none;
   width: 15vw;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  background-color: white;
+  border-radius: 40px;
+  padding: 0px !important;
+}
+
+.image-icon {
+  width: 60px;
+}
+
+.image-container div {
+  background-color: var(--background-a);
+  padding: 25px;
+  border-radius: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  width: 110px;
 }
 
 .test-btn:hover {
@@ -306,15 +331,46 @@ div button {
 
 /* HERO SHOT */
 
-#hero {
+#hero,
+#hero-alternative {
   display: flex;
   align-items: center;
   height: 65vh;
-  background-image: url("./../../assets/img/phone-869669_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-color);
   justify-content: center;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 400px;
+}
+
+.highlight-small {
+  margin-top: 20px;
+  background-color: var(--decline-color);
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.highlight-small:hover {
+  background-color: var(--button-color);
+}
+
+#hero {
+  background-image: url("./../../assets/img/phone-869669_1920.jpg");
+}
+
+#hero-alternative {
+  background-image: url("./../../assets/img/satellite-693226_1920.jpg");
 }
 
 #hero-cta {
@@ -733,6 +789,19 @@ header .menuIcon {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.highlight {
+  color: var(--decline-color);
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.txt-highlight {
+  font-weight: bolder;
+  font-size: 18px;
+  color: dodgerblue;
 }
 
 .small-img {

@@ -21,7 +21,7 @@ class Home extends React.Component {
                         <p className="slim-text">Wir helfen dir dabei dein digitales Leben zu strukturieren und die sozialen Medien einen besseren Ort für dich zu machen.
                         Kostenfrei mit garantierten Belohnungen für deinen Fortschritt.</p>
                         <div className="button-wrapper">
-                            <Button href="#claim" className="helper-btn">Teste dich</Button>
+                            <Button href="/test" className="helper-btn">Teste dich</Button>
                             <Button href="#claim" className="helper-btn-small">Erfahre mehr</Button>
                         </div>
                     </div>
