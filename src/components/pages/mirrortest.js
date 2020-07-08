@@ -167,42 +167,46 @@ class Test extends React.Component {
                 <h2>Frage 9:</h2>
                 <p className="slim-text centered">Wofür nutzt du die sozialen Medien?</p>
                 <div className="answer-container">
-                    <FormGroup>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={twitter}/>
+                    <FormGroup className="cpl-answer">
+                        <div className="image-container-wrapper">
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={twitter}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Twitter</Button>
                             </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Twitter</Button>
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={instagram}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Instagram</Button>
+                            </div>
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={youtube}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >YouTube</Button>
+                            </div>
                         </div>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={instagram}/>
+                        <div className="image-container-wrapper">
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={facebook}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Facebook</Button>
                             </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Instagram</Button>
-                        </div>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={youtube}/>
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={tiktok}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >TikTok</Button>
                             </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >YouTube</Button>
-                        </div>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={facebook}/>
+                            <div className="image-container">
+                                <div>
+                                    <img className="image-icon" src={reddit}/>
+                                </div>
+                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reddit</Button>
                             </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Facebook</Button>
-                        </div>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={tiktok}/>
-                            </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >TikTok</Button>
-                        </div>
-                        <div className="image-container">
-                            <div>
-                                <img className="image-icon" src={reddit}/>
-                            </div>
-                            <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reddit</Button>
                         </div>
                     </FormGroup>
                 </div>

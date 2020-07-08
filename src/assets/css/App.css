@@ -756,6 +756,11 @@ header .menuIcon {
   width: 50vw;
 }
 
+.cpl-answer {
+  flex-direction: row;
+  display: flex;
+}
+
 .input-group input,
 .large-input-group input {
   padding: 11px;
