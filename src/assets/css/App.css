@@ -142,6 +142,22 @@ a, button {
   background-color: var(--button-color);
 }
 
+.test-btn-scala {
+  border: none !important;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px !important;
+  margin-bottom: 25px !important;
+}
+
+.test-btn-scala:hover {
+  background-color: var(--button-color);
+}
+
+div button {
+  font-family: Montserrat;
+}
+
 .answer-container {
   display: flex;
   justify-content: space-between;
