@@ -16,6 +16,8 @@ class Test extends React.Component {
     constructor(props) {
         super(props);
 
+        var score = 0;
+
         this.state = {
             e1: false,
             e2: false,
@@ -54,9 +56,9 @@ class Test extends React.Component {
                 <p className="slim-text centered">Hast du schon einmal ein Produkt eines Influencers gekauft?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Nein</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja, einmal</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(2)} >Ja, mehrmals</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,1)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,1)} >Ja, einmal</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,1)} >Ja, mehrmals</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -67,8 +69,8 @@ class Test extends React.Component {
                 <p className="slim-text centered">Hast du schon einmal einen Influencer getroffen?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Nein</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,2)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,2)} >Ja</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -79,9 +81,9 @@ class Test extends React.Component {
                 <p className="slim-text centered">Verfolgst du Influencer auf Social Media?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Nein</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja, wenigen</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja, mehreren</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,3)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,3)} >Ja, wenigen</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,3)} >Ja, mehreren</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -92,8 +94,8 @@ class Test extends React.Component {
                 <p className="slim-text centered">Würdest du gerne einmal einen Influencer treffen?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Nein</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Ja</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,4)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,4)} >Ja</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -105,16 +107,16 @@ class Test extends React.Component {
                     Social Media zu verfolgen? (1 wenig, 10 sehr viel)</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn-scala" onClick={() => this.parent.setChosen(0)} >1</Button>
-                        <Button className="test-btn-scala" onClick={() => this.setChosen(1)} >2</Button>
-                        <Button className="test-btn-scala" onClick={() => this.parent.setChosen(0)} >3</Button>
-                        <Button className="test-btn-scala" onClick={() => this.setChosen(1)} >4</Button>
-                        <Button className="test-btn-scala" onClick={() => this.parent.setChosen(0)} >5</Button>
-                        <Button className="test-btn-scala" onClick={() => this.setChosen(1)} >6</Button>
-                        <Button className="test-btn-scala" onClick={() => this.parent.setChosen(0)} >7</Button>
-                        <Button className="test-btn-scala" onClick={() => this.setChosen(1)} >8</Button>
-                        <Button className="test-btn-scala" onClick={() => this.parent.setChosen(0)} >9</Button>
-                        <Button className="test-btn-scala" onClick={() => this.setChosen(1)} >10</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1,5)} >1</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,5)} >2</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,5)} >3</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,5)} >4</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,5)} >5</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,5)} >6</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,5)} >7</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,5)} >8</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,5)} >9</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,5)} >10</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -125,9 +127,9 @@ class Test extends React.Component {
                 <p className="slim-text centered">Statement: Mir ist es wichtig, oft online zu sein, um jederzeit up to date zu sein.</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Stimme nicht zu</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Stimme eher zu</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Stimme zu</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,6)} >Stimme nicht zu</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,6)} >Stimme eher zu</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,6)} >Stimme zu</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -138,9 +140,9 @@ class Test extends React.Component {
                 <p className="slim-text centered">Siehst du dir lieber Reaction Videos, oder die Videos selbst an?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Ich weiß nicht was das ist</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reaction Videos</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Selbst ansehen</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,7)} >Ich weiß nicht was das ist</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,7)} >Reaction Videos</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,7)} >Selbst ansehen</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -151,10 +153,10 @@ class Test extends React.Component {
                 <p className="slim-text centered">Wofür nutzt du die sozialen Medien?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Um mit Freunden in Kontakt zu bleiben</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Um aktuelle Nachrichten zu verfolgen</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Entertainment auf YouTube/Instagram</Button>
-                        <Button className="test-btn" onClick={() => this.setChosen(1)} >Networking/Berufliche Zwecke</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,8)} >Um mit Freunden in Kontakt zu bleiben</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,8)} >Um aktuelle Nachrichten zu verfolgen</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,8)} >Entertainment auf YouTube/Instagram</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1,8)} >Networking/Berufliche Zwecke</Button>
                     </FormGroup>
                 </div>
             </section>;
@@ -170,19 +172,19 @@ class Test extends React.Component {
                                 <div>
                                     <img className="image-icon" src={twitter}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Twitter</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(100,9)} >Twitter</Button>
                             </div>
                             <div className="image-container">
                                 <div>
                                     <img className="image-icon" src={instagram}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Instagram</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(1000,9)} >Instagram</Button>
                             </div>
                             <div className="image-container">
                                 <div>
                                     <img className="image-icon" src={youtube}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >YouTube</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(10,9)} >YouTube</Button>
                             </div>
                         </div>
                         <div className="image-container-wrapper">
@@ -190,19 +192,19 @@ class Test extends React.Component {
                                 <div>
                                     <img className="image-icon" src={facebook}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Facebook</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(10,9)} >Facebook</Button>
                             </div>
                             <div className="image-container">
                                 <div>
                                     <img className="image-icon" src={tiktok}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >TikTok</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(1000,9)} >TikTok</Button>
                             </div>
                             <div className="image-container">
                                 <div>
                                     <img className="image-icon" src={reddit}/>
                                 </div>
-                                <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Reddit</Button>
+                                <Button className="test-btn" onClick={() => this.setChosen(100,9)} >Reddit</Button>
                             </div>
                         </div>
                     </FormGroup>
@@ -215,33 +217,69 @@ class Test extends React.Component {
                 <p className="slim-text centered">Welche dieser Influencer verfolgst du?</p>
                 <div className="answer-container">
                     <FormGroup>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Donald Trump</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Elon Musk</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >BibisBeautyPalace</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >MrBeast</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >PewDiePie</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Roomie</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Gronkh</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Knossi</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Logan Paul</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Jake Paul</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >unge</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Drama Alert</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Shane Dawson</Button>
-                        <Button className="test-btn" onClick={() => this.parent.setChosen(0)} >Ricegum</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >Donald Trump</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,10)} >Elon Musk</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >BibisBeautyPalace</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,10)} >MrBeast</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >PewDiePie</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,10)} >Roomie</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,10)} >Gronkh</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >Knossi</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >Logan Paul</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >Jake Paul</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,10)} >unge</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,10)} >Drama Alert</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10000,10)} >Shane Dawson</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10000,10)} >Ricegum</Button>
                     </FormGroup>
                 </div>
+            </section>;
+
+        const result =
+            <section className="question-container">
+                <h2>Auswertung:</h2>
+                {
+                    this.state.score < 800 &&
+                    (
+                        <div id="harmlos">
+                            <h2>Harmlos</h2>
+                            <p className="txt-highlight">{this.score}</p>
+                            <div>
+                                <h3>Was bedeutet dieses Ergebnis?</h3>
+                            </div>
+                        </div>
+                    )
+                }
+                {
+                    this.state.score > 801 < 2500 &&
+                    (
+                        <div id="bedenklich">
+                            <h2>Bedenklich</h2>
+                            <p className="txt-highlight">{this.score}</p>
+                            <div>
+                                <h3>Was bedeutet dieses Ergebnis?</h3>
+                            </div>
+                        </div>
+                    )
+                }
+                {
+                    this.state.score > 2501 &&
+                    (
+                        <div>
+                            <h2>Potenziell gefährdet</h2>
+                        </div>
+                    )
+                }
             </section>;
 
         this.state = {
             answer: 0, //no by default 1-> true
             chosen: [],
-            highlighted: [
-                false,
-                false,
-                false
-            ],
+            highlighted: false,
             current: 1,
+            score: 0,
+            previousref: 0,
+            previousval: 0,
             pages: [
                 generic,
                 generic2,
@@ -253,36 +291,50 @@ class Test extends React.Component {
                 generic8,
                 generic9,
                 generic10,
+                result
             ]
         };
 
     this.setChosen = this.setChosen.bind(this);
 }
 
-    changeE1(){
-        this.setState({
-            e1: !this.state.e1,
-        })
-    }
+    setChosen(value, ref) {
+        if(this.state.previousref == ref && ref < 9){
 
-    setChosen(value) {
-        /*this.state.answer = value;
-        this.state.chosen[0] = this.state.answer;
-        console.log(this.state.highlighted[value]);
-        this.state.highlighted[value] = !this.state.highlighted[value]
-        console.log(this.state.highlighted[value]);
-         */
-        this.setState({
-           value: !this.state.value,
-        });
+            this.setState({
+                highlighted: true,
+                score: this.state.score - this.state.previousval + value,
+                previousref: ref,
+                previousval: value
+            });
+            this.score = this.state.score;
+        } else {
+            this.setState({
+                highlighted: true,
+                score: this.state.score += value,
+                previousref: ref,
+                previousval: value
+            });
+            this.score = this.state.score;
+        }
     }
 
     navigate(current){
-        let next = current;
+        if(current <= 10){
+            let next = current;
 
-        this.setState({
-            current: next,
-        });
+            this.setState({
+                current: next,
+                highlighted: !this.state.highlighted,
+            });
+
+            console.log(this.state.score);
+        } else {
+            this.setState({
+                score: this.state.score,
+                current: 11,
+            });
+        }
     }
 
     render() {
@@ -320,13 +372,26 @@ class Test extends React.Component {
                 <div id="test" className="wrapper">
                     <div id="page-wrapper">
                         <p>Frage {this.state.current}/10</p>
+                        {
+                            this.state.current > 10 &&
+                            (
+                                <article id="menu-wrapper">
+                                    <div id="pages">
+                                        <span className="page-links" onClick={() => window.location.href='/'}>Home</span>
+                                        <span className="page-links" onClick={() => window.location.href='test'}>Test</span>
+                                        <span className="page-links" onClick={() => window.location.href='wissen'}>Wissen</span>
+                                        <span className="page-links" onClick={() => window.location.href='knowledge'}>Monitoring</span>
+                                    </div>
+                                </article>
+                            )
+                        }
                         <Pagination>{items}</Pagination>
                     </div>
                     <div className="question">
                         {this.state.pages[this.state.current -1]}
                     </div>
                     <div>
-                        <Button className="test-btn" onClick={() => this.navigate(this.state.current +1)} >Weiter</Button>
+                        <Button className={`test-btn btn${this.state.highlighted === false ? "" : "-highlighted"}`} onClick={() => this.navigate(this.state.current +1)} >Weiter</Button>
                     </div>
                 </div>
             </div>
