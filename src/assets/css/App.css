@@ -814,6 +814,32 @@ header .menuIcon {
   font-weight: bolder;
   font-size: 18px;
   color: dodgerblue;
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center !important;
+}
+
+#bedenklich .txt-highlight {
+  color: coral!important;
+}
+
+#danger .txt-highlight {
+  color: crimson!important;
+}
+
+#danger {
+  background-color: crimson;
+  width: 85vw;
+  border-radius: 25px;
+}
+
+.spacing {
+  margin: 20px 0px 20px 0px;
+}
+
+#danger h2,h3,h4,p{
+  color: white !important;
 }
 
 .small-img {

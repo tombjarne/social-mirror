@@ -235,43 +235,6 @@ class Test extends React.Component {
                 </div>
             </section>;
 
-        const result =
-            <section className="question-container">
-                <h2>Auswertung:</h2>
-                {
-                    this.state.score < 800 &&
-                    (
-                        <div id="harmlos">
-                            <h2>Harmlos</h2>
-                            <p className="txt-highlight">{this.score}</p>
-                            <div>
-                                <h3>Was bedeutet dieses Ergebnis?</h3>
-                            </div>
-                        </div>
-                    )
-                }
-                {
-                    this.state.score > 801 < 2500 &&
-                    (
-                        <div id="bedenklich">
-                            <h2>Bedenklich</h2>
-                            <p className="txt-highlight">{this.score}</p>
-                            <div>
-                                <h3>Was bedeutet dieses Ergebnis?</h3>
-                            </div>
-                        </div>
-                    )
-                }
-                {
-                    this.state.score > 2501 &&
-                    (
-                        <div>
-                            <h2>Potenziell gefährdet</h2>
-                        </div>
-                    )
-                }
-            </section>;
-
         this.state = {
             answer: 0, //no by default 1-> true
             chosen: [],
@@ -291,7 +254,6 @@ class Test extends React.Component {
                 generic8,
                 generic9,
                 generic10,
-                result
             ]
         };
 
@@ -389,6 +351,79 @@ class Test extends React.Component {
                     </div>
                     <div className="question">
                         {this.state.pages[this.state.current -1]}
+                        {
+                            this.state.current == 11 && this.state.score > 10 &&
+                            (
+                                <div>
+                                    <section className="question-container">
+                                        <h2>Auswertung:</h2>
+                                        {
+                                            this.state.score < 801 &&
+                                            (
+                                                <div id="harmlos">
+                                                    <h2>Harmlos</h2>
+                                                    <p className="txt-highlight">{this.score}</p>
+                                                    <div>
+                                                        <h3>Was bedeutet dieses Ergebnis?</h3>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                        {
+                                            this.state.score > 800 && this.state.score < 2501 &&
+                                            (
+                                                <div id="bedenklich">
+                                                    <h2>Bedenklich</h2>
+                                                    <p className="txt-highlight">{this.score}</p>
+                                                    <div>
+                                                        <h3>Was bedeutet dieses Ergebnis?</h3>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                        {
+                                            this.state.score > 2501 &&
+                                            (
+                                                <div id="danger">
+                                                    <h2>Potenziell gefährdet</h2>
+                                                    <p className="txt-highlight">{this.score} Punkte</p>
+                                                    <div>
+                                                        <h3>Was bedeutet dieses Ergebnis?</h3>
+                                                        <ul className="slim-list">
+                                                            <li>Du verbringst viel Zeit auf Social Media</li>
+                                                            <li>Du folgst Personen mit schlechtem Einfluss</li>
+                                                            <li>Du bist aus Langeweile auf Social Media</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h2>Bereit etwas zu verändern?</h2>
+                                                    <p>Hol dir jetzt deine Belohnung ab und registriere dich kostenfrei und unverbindlich bei unserem Monitoring Programm.</p>
+                                                    <h4>Wie profitierst du davon?</h4>
+                                                    <p>Für deine Fortschritte weniger Zeit auf Social Media zu verbringen gibt's satte Belohnungen und Preise für dich!</p>
+                                                    <div className="spacing"></div>
+                                                    <Button href="#claim" className="helper-btn btn">Probier's aus!</Button>
+                                                    <div className="spacing"></div>
+                                                </div>
+                                            )
+                                        }
+                                    </section>
+                                </div>
+                            )
+                        }
+                        {
+                            this.state.current == 11 && this.state.score < 11 &&
+                            (
+                                <div>
+                                    <section className="question-container">
+                                        <h2>Halt!</h2>
+                                        <p className="txt-highlight">{this.score}</p>
+                                        <div>
+                                            <h3>Warum hast du kein Ergebnis?</h3>
+                                            <p>Bitte schließe das Quiz ordentlich ab und beantworte jede Frage</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            )
+                        }
                     </div>
                     <div>
                         <Button className={`test-btn btn${this.state.highlighted === false ? "" : "-highlighted"}`} onClick={() => this.navigate(this.state.current +1)} >Weiter</Button>
