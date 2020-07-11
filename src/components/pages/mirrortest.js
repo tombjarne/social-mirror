@@ -235,6 +235,55 @@ class Test extends React.Component {
                 </div>
             </section>;
 
+        const generic11 =
+            <section className="question-container">
+                <h2>Frage 11:</h2>
+                <p className="slim-text centered">Wie häufig benutzt du das Internet? (1 wenig, 10 sehr viel)</p>
+                <div className="answer-container">
+                    <FormGroup>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1,11)} >1</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,11)} >2</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,11)} >3</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(10,11)} >4</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,11)} >5</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,11)} >6</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(100,11)} >7</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,11)} >8</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,11)} >9</Button>
+                        <Button className="test-btn-scala" onClick={() => this.setChosen(1000,11)} >10</Button>
+                    </FormGroup>
+                </div>
+            </section>;
+
+        const generic12 =
+            <section className="question-container">
+                <h2>Frage 12:</h2>
+                <p className="slim-text centered">Hast du schon einmal Content auf YouTube oder einer anderen Plattform produziert?</p>
+                <div className="answer-container">
+                    <FormGroup>
+                        <Button className="test-btn" onClick={() => this.setChosen(10000,12)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(1000,12)} >Nein, ich würde aber gerne</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,12)} >Ja, ab und zu</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,12)} >Ja, regelmäßig</Button>
+                    </FormGroup>
+                </div>
+            </section>;
+
+        const generic13 =
+            <section className="question-container">
+                <h2>Frage 13:</h2>
+                <p className="slim-text centered">Schätze dich selbst ein: Bist du abhängig von Social Media oder einem Influencer?</p>
+                <div className="answer-container">
+                    <FormGroup>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,13)} >Nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10,13)} >Eher nein</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,13)} >Weiß nicht</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(100,13)} >Eher ja</Button>
+                        <Button className="test-btn" onClick={() => this.setChosen(10000,13)} >Ja</Button>
+                    </FormGroup>
+                </div>
+            </section>;
+
         this.state = {
             answer: 0, //no by default 1-> true
             chosen: [],
@@ -254,6 +303,9 @@ class Test extends React.Component {
                 generic8,
                 generic9,
                 generic10,
+                generic11,
+                generic12,
+                generic13,
             ]
         };
 
@@ -282,7 +334,7 @@ class Test extends React.Component {
     }
 
     navigate(current){
-        if(current <= 10){
+        if(current <= 13){
             let next = current;
 
             this.setState({
@@ -294,7 +346,7 @@ class Test extends React.Component {
         } else {
             this.setState({
                 score: this.state.score,
-                current: 11,
+                current: 14,
             });
         }
     }
@@ -303,7 +355,7 @@ class Test extends React.Component {
 
         let items = [];
 
-        for (let number = 1; number <= 10; number++) {
+        for (let number = 1; number <= 13; number++) {
             if(number <= this.state.current) {
                 items.push(
                     <Pagination.Item
@@ -333,9 +385,9 @@ class Test extends React.Component {
                 <h1 className="big-title">Teste dich</h1>
                 <div id="test" className="wrapper">
                     <div id="page-wrapper">
-                        <p>Frage {this.state.current}/10</p>
+                        <p>Frage {this.state.current}/13</p>
                         {
-                            this.state.current > 10 &&
+                            this.state.current > 13 &&
                             (
                                 <article id="menu-wrapper">
                                     <div id="pages">
@@ -352,7 +404,7 @@ class Test extends React.Component {
                     <div className="question">
                         {this.state.pages[this.state.current -1]}
                         {
-                            this.state.current == 11 && this.state.score > 10 &&
+                            this.state.current == 13 && this.state.score > 13 &&
                             (
                                 <div>
                                     <section className="question-container">
@@ -410,7 +462,7 @@ class Test extends React.Component {
                             )
                         }
                         {
-                            this.state.current == 11 && this.state.score < 11 &&
+                            this.state.current == 14 && this.state.score < 14 &&
                             (
                                 <div>
                                     <section className="question-container">

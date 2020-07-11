@@ -255,6 +255,30 @@ div button {
   width: 5vw;
 }
 
+#social-media-wrapper {
+
+}
+
+#social-media-wrapper div .image-container {
+  margin: 20px 0px 20px 0px;
+  background-color: var(--background-color) !important;
+}
+
+#social-media-wrapper .image-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-media-wrapper .image-container div {
+  margin: 25px;
+}
+
+.black {
+  color: black !important;
+}
+
 #video-player div {
   margin-top: 0px !important;
   padding-top: 0px !important;
