@@ -93,6 +93,7 @@ a, button {
 
 .highlight {
   color: var(--txt-highlight);
+  margin-right: 5px;
 }
 
 .centered {
@@ -247,6 +248,14 @@ div button {
   display: none;
 }
 
+.pagination-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
 #sidebar-wrapper {
   position: absolute;
   right: 0px;
@@ -271,8 +280,18 @@ div button {
   align-items: center;
 }
 
+.image-container-wrapper {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
 #social-media-wrapper .image-container div {
   margin: 25px;
+}
+
+
+.answer-container .form-group .test-btn {
+  margin: 5px !important;
 }
 
 .black {
@@ -550,6 +569,28 @@ div button {
   --heading-color: #58B4FB;
   --txt-highlight: #19C5FB;
   --background-a: #3D3F54;
+}
+
+.legend {
+  display: flex;
+}
+
+#fb {
+  padding: 10px;
+  background-color: #3cb270;
+  border-radius: 15px;
+}
+
+#yt {
+  padding: 10px;
+  background-color: #dd376a;
+  border-radius: 15px;
+}
+
+#in {
+  padding: 10px;
+  background-color: #e0be24;
+  border-radius: 15px;
 }
 
 .claim-actions {
@@ -973,17 +1014,34 @@ header .menuIcon {
 }
 
 #danger {
-  background-color: crimson;
-  width: 85vw;
   border-radius: 25px;
+}
+
+#danger h2 {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: crimson;
 }
 
 .spacing {
   margin: 20px 0px 20px 0px;
 }
 
+.spacing-slim {
+  margin: 5px 0px 5px 0px;
+}
+
 #danger h2, #danger h3, #danger h4, #danger p{
   color: white !important;
+}
+
+.red {
+  background-color: crimson !important;
+  color: white !important;
+}
+
+.span {
+  border-radius: 15px;
 }
 
 .small-img {
@@ -1003,7 +1061,9 @@ header .menuIcon {
   width: 30vw !important;
 }
 
-
+.agree-btn {
+  background-color: var(--background-a);
+}
 
 .btn-primary {
   cursor: pointer;
