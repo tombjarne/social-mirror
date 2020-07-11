@@ -392,6 +392,46 @@ div button {
   color: white;
 }
 
+.modal-dialog {
+  background-color: var(--background-a);
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  border: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+#video-player-slim {
+  width: 65vw !important;
+  height: 20vh !important;
+  border-radius: 25px !important;
+  padding: 5px;
+  background-color: var(--background-color);
+}
+
+#video-player-slim div iframe {
+  border-radius: 25px;
+}
+
+.accept-btn {
+  border: none;
+  background-color: crimson;
+  color: white;
+}
+
 .logo-icon {
   height: 20px !important;
   width: 20px !important;
@@ -484,13 +524,81 @@ div button {
   margin: 3px !important;
 }
 
-#video-player {
+#video-player,
+.video-player {
   margin: 0px;
 }
 
 #video-player-big {
   width: 60vw !important;
   height: 45vh !important;
+}
+
+.ranking-wrapper {
+
+}
+
+.good,
+.authentic-parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authentic-parent {
+  background-color: var(--background-a) !important;
+}
+
+.good {
+  background-color: mediumseagreen !important;
+  color: white !important;
+}
+
+.mid {
+  background-color: lightcoral !important;
+  color: white !important;
+}
+
+.bad {
+  background-color: crimson !important;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+}
+
+.info-box-helper {
+  font-size: 10px;
+  padding: 10px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 250px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chart {
+  width: 40vw;
+  margin-top: 25px;
+}
+
+.authentic {
+  width: 30px;
+  height: 30px;
+  background-color: dodgerblue;
+  border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 15px;
+  font-size: 25px;
+  padding-top: 10px;
 }
 
 * {
@@ -838,7 +946,7 @@ header .menuIcon {
   margin: 20px 0px 20px 0px;
 }
 
-#danger h2,h3,h4,p{
+#danger h2, #danger h3, #danger h4, #danger p{
   color: white !important;
 }
 
