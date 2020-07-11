@@ -9,7 +9,7 @@ import Modal from "react-bootstrap/Modal"
 
 import ReactPlayer from "react-player";
 
-class Analyse extends React.Component {
+class SocialMedia extends React.Component {
 
     constructor(props) {
         super (props);
@@ -44,31 +44,32 @@ class Analyse extends React.Component {
     render() {
         return (
             <section id="home">
-                <div id="hero-alternative">
+                <div id="hero">
                     <div id="hero-cta">
                         <div>
-                            <h1>Deine Wahl: </h1>
-                            <span className="highlight">@elonmusk</span>
-                            <p className="slim-text">Elon Musk ist ein kanadisch-US-amerikanischer Unternehmer. Besonders bekannt für</p>
-                            <span className="txt-highlight"> Space X</span> <span className="txt-highlight">Tesla</span>
+                            <h1>Social Media</h1>
+                            <p className="slim-text">Hier erfährst du was Social Media ist, wie du es am besten nutzt und welche Plattformen für dich geeignet sind</p>
+                            <h2>Womit möchtest du beginnen?</h2>
+                            <div className="button-wrapper-vert">
+                                <Button href="#informations" className="helper-btn">Informationen</Button>
+                                <Button href="#comparison" className="helper-btn">Vergleich</Button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="info">
                     <div className="wrapper">
                         <div id="hero-cta">
-                            <div className="profile-wrapper">
-                                <img className="profile-img" src={elon}/>
-                                <h2>Elon Musk </h2>
-                                <span className="highlight">36,6 Mio. Follower</span>
-                            </div>
+                            <h3>Wusstest du, dass ...?</h3>
+                            <p>dass mittlerweile knapp 3 Milliarden Menschen auf den sozialen Netzwerken angemeldet sind?
+                            Das ist fast die Hälfte der gesamten Weltbevölkerung!</p>
                         </div>
                     </div>
                 </div>
                 <div id="demo">
                     <div className="claim-overlay"></div>
                     <div className="wrapper">
-                        <h2>Elon Musk ist bekannt für</h2>
+                        <h2>Informationen</h2>
                         <div className="icon-container">
                             <div className="icon-wrapper">
                                 <div>
@@ -83,7 +84,7 @@ class Analyse extends React.Component {
                                 </div>
                                 <h3>Harte Arbeit</h3>
                                 <p className="centered">Nach seinem Motto "work every waking hour" ist Elon ein sehr hart arbeitender Mensch, der sein Bestes gibt seine
-                                Firmen am Leben zu erhalten und grandiose Dinge zu erschaffen.</p>
+                                    Firmen am Leben zu erhalten und grandiose Dinge zu erschaffen.</p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +120,7 @@ class Analyse extends React.Component {
 
                                                 <Modal.Body>
                                                     <p>Elon Musk ist kein Influencer der Drongenkonsum verherrlicht oder darstellt. In einem seiner Interviews
-                                                    gab es einen eher harmlosen Zwischenfall mit der Droge Marihuana. Daraufhin stürzten die Aktien seiner Firmen in die Tiefe.</p>
+                                                        gab es einen eher harmlosen Zwischenfall mit der Droge Marihuana. Daraufhin stürzten die Aktien seiner Firmen in die Tiefe.</p>
                                                     <div className="play-slim">
                                                         {
                                                             this.state.age == false &&
@@ -148,8 +149,8 @@ class Analyse extends React.Component {
                             <img src={chart} className="chart" />
                             <h3>Fazit</h3>
                             <p className="centered">Elon Musk ist ein ungefährlicher Influencer. Seine Postings belaufen sich nicht auf Werbung oder Brand Deals
-                            für andere Firmen. Als Firmeninhaber und Milliardär wirbt er lediglich für seine eigenen Firmen: oft etwas humoristisch,
-                            und sarkatisch. Außer wenigen Ausrutschern ist Elon sich seiner Linie treu geblieben. Ihm kann man unbedenklich folgen!</p>
+                                für andere Firmen. Als Firmeninhaber und Milliardär wirbt er lediglich für seine eigenen Firmen: oft etwas humoristisch,
+                                und sarkatisch. Außer wenigen Ausrutschern ist Elon sich seiner Linie treu geblieben. Ihm kann man unbedenklich folgen!</p>
                         </div>
                     </div>
                 </div>
@@ -193,4 +194,4 @@ class Analyse extends React.Component {
     }
 }
 
-export default Analyse;
+export default SocialMedia;

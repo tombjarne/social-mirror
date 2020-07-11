@@ -19,7 +19,7 @@ class Home extends React.Component {
                         Kostenfrei mit garantierten Belohnungen für deinen Fortschritt.</p>
                         <div className="button-wrapper">
                             <Button href="/test" className="helper-btn">Teste dich</Button>
-                            <Button href="#claim" className="helper-btn-small">Erfahre mehr</Button>
+                            <Button href="/wissen" className="helper-btn-small">Erfahre mehr</Button>
                         </div>
                     </div>
                 </div>

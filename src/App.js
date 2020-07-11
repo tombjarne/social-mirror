@@ -10,6 +10,8 @@ import Statistics from "./components/pages/statistics";
 import Eprivacy from "./components/pages/eprivacy";
 import Test from "./components/pages/mirrortest";
 import Influencers from "./components/pages/influencers";
+import SocialMedia from "./components/pages/socialmedia";
+import Gefahren from "./components/pages/dangers";
 import Analyse from "./components/pages/analyse"
 
 import"./assets/css/media-queries.css";
@@ -25,6 +27,8 @@ function App() {
                     <Route path="/analysis" component={Analysis} />
                     <Route path="/wissen/influencer/analyse" component={Analyse} />
                     <Route path="/wissen/influencer" component={Influencers} />
+                    <Route path="/wissen/social-media" component={SocialMedia} />
+                    <Route path="/wissen/gefahren" component={Gefahren} />
                     <Route path="/wissen" component={Knowledge} />
                     <Route path="/topics" component={Hottopics} />
                     <Route path="/statistics" component={Statistics} />

@@ -168,6 +168,28 @@
         margin-top: 15px;
     }
 
+    .button-wrapper-vert {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .button-wrapper-vert a {
+        text-align: center !important;
+    }
+
+    #sidebar-responsive-wrapper {
+        width: 45px !important;
+    }
+
+    #sidebar {
+        width: 72vw !important;
+    }
+
+    #sidebar-toggle {
+        right: 40px !important;
+    }
+
     .slim-text {
         width: 75vw !important;
     }

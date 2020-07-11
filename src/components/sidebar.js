@@ -32,13 +32,13 @@ class Sidebar extends React.Component {
 
         return (
             <div id={`sidebar-responsive-wrapper${isSidebarVisible ? "" : "-extended"}`}
-                 onClick={this.toggleSidebar}
             >
                 <Navbar id="sidebar-nav" bg="light" expand="xl" collapseOnSelect>
                     <img
                         id="sidebar-toggle"
                         src={Logo}
                         className = "toggle-icon"
+                        onClick={this.toggleSidebar}
                     />
                     <div>
                         {
@@ -46,26 +46,26 @@ class Sidebar extends React.Component {
                             (
                                 <article id="sidebar">
                                     <div id="pages">
-                                        <h1>Ready to learn more?</h1>
+                                        <h1>Bereit mehr herauszufinden?</h1>
                                         <div className="sidebar-feature bright">
-                                            <h4>Hot topics</h4>
+                                            <h4>Aktuelles</h4>
                                         </div>
                                         <div className="sidebar-feature bright">
-                                            <h4>Statistics</h4>
+                                            <h4>Statistiken</h4>
                                         </div>
                                         <div className="sidebar-feature bright">
-                                            <h4>E-Privacy</h4>
+                                            <h4>Test</h4>
                                         </div>
                                     </div>
                                     <Form inline>
                                         <InputGroup>
-                                            <h1>Quicksearch</h1>
+                                            <h1>Schnellsuche</h1>
                                             <FormControl
                                                 placeholder="Username"
                                                 aria-label="Username"
                                                 aria-describedby="basic-addon1"
                                             />
-                                            <Button type="submit" >Submit</Button>
+                                            <Button type="submit" onClick={() => window.location.href="./wissen/influencer/analyse"}>Suchen</Button>
                                         </InputGroup>
                                     </Form>
                                 </article>

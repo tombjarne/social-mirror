@@ -255,6 +255,11 @@ div button {
   width: 5vw;
 }
 
+#video-player div {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
 #menu-wrapper {
   display: flex;
   justify-content: center;
@@ -278,6 +283,12 @@ div button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.white {
+  background-color: white !important;
+  color: crimson !important;
+  border: none !important;
 }
 
 #footer-wrapper {
@@ -527,6 +538,7 @@ div button {
 #video-player,
 .video-player {
   margin: 0px;
+  display: flex;
 }
 
 #video-player-big {
@@ -790,7 +802,7 @@ header .menuIcon {
   padding: 3px;
   border-radius: 25px;
   cursor: pointer;
-  right: 25px;
+  right: 70px;
 }
 
 .sidebar-feature {
