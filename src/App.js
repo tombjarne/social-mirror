@@ -12,6 +12,7 @@ import SocialMedia from "./components/pages/socialmedia";
 import Gefahren from "./components/pages/dangers";
 import Analyse from "./components/pages/analyse"
 import Rewards from "./components/pages/rewards"
+import Coupons from "./components/pages/coupons"
 import RewardA from "./components/pages/rewardsa"
 import RewardsPage from "./components/pages/rewardspage"
 
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/rewards/1000" component={RewardA} />
                     <Route path="/rewards/1001" component={Rewards} />
                     <Route path="/rewards" component={RewardsPage} />
+                    <Route path="/coupons" component={Coupons} />
                     <Route path="/wissen" component={Knowledge} />
                     <Route path="/topics" component={Hottopics} />
                     <Route path="/profil" component={Profile} />

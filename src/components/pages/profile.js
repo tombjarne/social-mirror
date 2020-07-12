@@ -53,7 +53,7 @@ class Analyse extends React.Component {
                             <span className="highlight">Facebook</span>
                             <span className="highlight">Twitter</span>
                             <div className="spacing"></div>
-                            <p className="slim-text">Letzte Woche auf einen Blick</p>
+                            <h3 className="centered">Letzte Woche auf einen Blick</h3>
                             <div className="button-wrapper-vert">
                                 <span className="txt-highlight">3% weniger Instagram</span>
                                 <div className="spacing-slim"></div>

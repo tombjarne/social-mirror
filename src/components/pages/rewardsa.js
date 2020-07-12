@@ -5,36 +5,6 @@ import Button from "react-bootstrap/Button";
 
 class Rewardsa extends React.Component {
 
-    constructor(props) {
-        super (props);
-
-        this.state = {
-            clicked: false,
-            age: false,
-        };
-        this.handleOpen = this.handleOpen.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-        this.showVideo = this.showVideo.bind(this);
-    }
-
-    handleOpen(){
-        this.setState({
-            clicked: true,
-        });
-    }
-
-    handleClose(){
-        this.setState({
-            clicked: false,
-        });
-    }
-
-    showVideo(){
-        this.setState({
-            age: true,
-        })
-    }
-
     render() {
         return (
             <section id="home">
@@ -57,7 +27,7 @@ class Rewardsa extends React.Component {
                                 <img className="qr-code" src={code} />
                                 <span className="txt-highlight red">1 x Geführte Wanderung!</span>
                                 <div className="spacing"></div>
-                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/rewards"}>Jetzt Gutschein abholen</Button>
+                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/rewards"}>Jetzt Reward abholen</Button>
                                 <p className="slim-text centered">Der Gutschein ist gültig vom 01.08.2020 bis zum 31.10.2020. Beeil dich beim Einlösen deines Codes!</p>
                             </div>
                         </div>

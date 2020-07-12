@@ -2,36 +2,6 @@ import React from "react";
 
 class Rewardspage extends React.Component {
 
-    constructor(props) {
-        super (props);
-
-        this.state = {
-            clicked: false,
-            age: false,
-        };
-        this.handleOpen = this.handleOpen.bind(this);
-        this.handleClose = this.handleClose.bind(this);
-        this.showVideo = this.showVideo.bind(this);
-    }
-
-    handleOpen(){
-        this.setState({
-            clicked: true,
-        });
-    }
-
-    handleClose(){
-        this.setState({
-            clicked: false,
-        });
-    }
-
-    showVideo(){
-        this.setState({
-            age: true,
-        })
-    }
-
     render() {
         return (
             <section id="home">

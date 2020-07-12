@@ -3,16 +3,13 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import jokes from "../../assets/img/memes.png";
 import friendship from "../../assets/img/happy-symbol.png";
-import Modal from "react-bootstrap/Modal"
 
-import ReactPlayer from "react-player";
 import twitter from "../../assets/img/twitter.png";
 import instagram from "../../assets/img/instagram.png";
 import youtube from "../../assets/img/yt_icon_rgb.png";
 import facebook from "../../assets/img/facebook.png";
 import tiktok from "../../assets/img/tiktok-logo.png";
 import reddit from "../../assets/img/reddit.png";
-import FormGroup from "react-bootstrap/FormGroup";
 
 class SocialMedia extends React.Component {
 

@@ -57,9 +57,9 @@ class Navigation extends React.Component {
                                     <article id="menu-wrapper">
                                         <div id="pages">
                                             <span className="page-links" onClick={() => window.location.href='/'}>Home</span>
-                                            <span className="page-links" onClick={() => window.location.href='test'}>Test</span>
-                                            <span className="page-links" onClick={() => window.location.href='wissen'}>Wissen</span>
-                                            <span className="page-links" onClick={() => window.location.href='profil'}>Profil</span>
+                                            <span className="page-links" onClick={() => window.location.href='/test'}>Test</span>
+                                            <span className="page-links" onClick={() => window.location.href='/wissen'}>Wissen</span>
+                                            <span className="page-links" onClick={() => window.location.href='/profil'}>Profil</span>
                                         </div>
                                     </article>
                                 )
