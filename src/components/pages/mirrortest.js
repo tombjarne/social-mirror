@@ -11,7 +11,6 @@ import Button from "react-bootstrap/Button";
 import FormGroup from "react-bootstrap/FormGroup";
 
 class Test extends React.Component {
-    e30 = false;
 
     constructor(props) {
         super(props);
@@ -31,7 +30,6 @@ class Test extends React.Component {
             e10: false,
             e11: false,
             e12: false,
-            e14: false,
             e14: false,
             e15: false,
             e16: false,

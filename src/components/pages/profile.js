@@ -1,9 +1,7 @@
 import React from "react";
 
 import user from "../../assets/img/user-alt-solid.svg";
-import work from "../../assets/img/hard-work.png";
-import jokes from "../../assets/img/memes.png";
-import youtube from "../../assets/img/yt_icon_rgb.png";
+import twitter from "../../assets/img/twitter.png";
 import instagram from "../../assets/img/instagram.png";
 import facebook from "../../assets/img/facebook.png";
 import user_chart from "../../assets/img/profile-analysis.png";
@@ -61,7 +59,7 @@ class Analyse extends React.Component {
                                 <div className="spacing-slim"></div>
                                 <span className="txt-highlight">12% weniger Facebook</span>
                                 <div className="spacing-slim"></div>
-                                <span className="txt-highlight red">4% mehr YouTube</span>
+                                <span className="txt-highlight red">4% mehr Twitter</span>
                             </div>
                         </div>
                     </div>
@@ -84,9 +82,9 @@ class Analyse extends React.Component {
                         <div className="icon-container">
                             <div className="icon-wrapper">
                                 <div>
-                                    <img id="small-img" className="icon" alt="" src={youtube} />
+                                    <img id="small-img" className="icon" alt="" src={twitter} />
                                 </div>
-                                <h3>YouTube</h3>
+                                <h3>Twitter</h3>
                                 <span className="highlight">1:59h letzte Woche</span>
                             </div>
                             <div className="icon-wrapper">
@@ -135,7 +133,7 @@ class Analyse extends React.Component {
                         <div className="legend">
                             <p id="fb" >Facebook</p>
                             <p id="in" >Instagram</p>
-                            <p id="yt" >YouTube</p>
+                            <p id="yt" >Twitter</p>
                         </div>
                         <h3>Fazit</h3>
                         <p className="centered">
@@ -155,7 +153,7 @@ class Analyse extends React.Component {
                                 </div>
                                 <h3>Rewards</h3>
                                 <p className="slim-text centered">Sieh dir all hier deine gewonnenen und verdienten Belohnungen an!</p>
-                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/profil"}>Jetzt ansehen</Button>
+                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/rewards"}>Jetzt ansehen</Button>
                             </div>
                             <div className="icon-wrapper">
                                 <div>
@@ -163,7 +161,7 @@ class Analyse extends React.Component {
                                 </div>
                                 <h3>Gutscheine</h3>
                                 <p className="slim-text centered">Hol dir hier deine hart verdienten Gutscheine ab!</p>
-                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/profil"}>Jetzt ansehen</Button>
+                                <Button className="helper-btn agree-btn" onClick={() => window.location.href="/coupons"}>Jetzt ansehen</Button>
                             </div>
                         </div>
                     </div>

@@ -182,6 +182,10 @@ a, button {
   margin-top: 15px;
 }
 
+.button-wrapper-vert {
+  display: flex;
+}
+
 .button-wrapper a {
   margin-left: 0px !important;
 }
@@ -386,7 +390,10 @@ div button {
 /* HERO SHOT */
 
 #hero,
-#hero-alternative {
+#hero-alternative,
+#hero-alternative-reward,
+#hero-alternative-reward-1,
+#rewardsa{
   display: flex;
   align-items: center;
   height: 65vh;
@@ -394,6 +401,39 @@ div button {
   background-repeat: no-repeat;
   background-color: var(--background-color);
   justify-content: center;
+}
+
+.qr-code {
+  padding: 15px;
+  background-color: var(--background-a);
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+#hero-alternative-reward {
+  background-image: url("../../assets/img/city.jpg");
+}
+
+#hero-alternative-reward-1 {
+  height: 80vh !important;
+  background-image: url("../../assets/img/citylight.jpg");
+}
+
+#rewardsa {
+  background-image: url("../../assets/img/nature.jpg");
+}
+
+.white-text {
+  color: white !important;
+}
+
+.expired {
+  background-color: gray !important;
+  color: lightgrey !important;
+}
+
+#hero-alternative-reward-1 span {
+  cursor: pointer;
 }
 
 .profile-wrapper {
