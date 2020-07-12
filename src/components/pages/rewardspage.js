@@ -15,9 +15,9 @@ class Rewardspage extends React.Component {
                                 <div className="spacing-slim"></div>
                                 <span className="txt-highlight good" onClick={() => window.location.href="rewards/1000"}>1 x Geführte Wanderung</span>
                                 <div className="spacing-slim"></div>
-                                <span className="txt-highlight expired">1 x Geführte Wanderung</span>
+                                <span className="txt-highlight expired">1 x Essensgutschein Freddy Fuego</span>
                                 <div className="spacing-slim"></div>
-                                <span className="txt-highlight expired">1 x Geführte Wanderung</span>
+                                <span className="txt-highlight expired">1 x Kinobesuch Cineplex</span>
                             </div>
                         </div>
                     </div>
