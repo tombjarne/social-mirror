@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navigation from "./components/navigation";
 import Home from "./components/pages/home";
 import Knowledge from "./components/pages/faq";
-import Hottopics from "./components/pages/hottopics";
 import Profile from "./components/pages/profile";
 import Test from "./components/pages/mirrortest";
 import Influencers from "./components/pages/influencers";
@@ -35,7 +34,6 @@ function App() {
                     <Route path="/rewards" component={RewardsPage} />
                     <Route path="/coupons" component={Coupons} />
                     <Route path="/wissen" component={Knowledge} />
-                    <Route path="/topics" component={Hottopics} />
                     <Route path="/profil" component={Profile} />
                     <Route path="/test" component={Test} />
                     <Route path="/" component={Home}/>

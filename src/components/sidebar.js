@@ -47,13 +47,19 @@ class Sidebar extends React.Component {
                                 <article id="sidebar">
                                     <div id="pages">
                                         <h1>Bereit mehr herauszufinden?</h1>
-                                        <div className="sidebar-feature bright">
-                                            <h4>Aktuelles</h4>
+                                        <div className="sidebar-feature bright"
+                                             onClick={() => window.location.href="/wissen/influencer"}
+                                        >
+                                            <h4>Influencer</h4>
                                         </div>
-                                        <div className="sidebar-feature bright">
-                                            <h4>Statistiken</h4>
+                                        <div className="sidebar-feature bright"
+                                             onClick={() => window.location.href="/wissen/social-media"}
+                                        >
+                                            <h4>Social Media</h4>
                                         </div>
-                                        <div className="sidebar-feature bright">
+                                        <div className="sidebar-feature bright"
+                                            onClick={() => window.location.href="/test"}
+                                        >
                                             <h4>Test</h4>
                                         </div>
                                     </div>

@@ -211,6 +211,10 @@ div button {
   justify-content: space-between;
 }
 
+.answer-container button {
+  margin-top: 0px !important;
+}
+
 .pagination {
   list-style: none;
   display: flex;
@@ -393,7 +397,8 @@ div button {
 #hero-alternative,
 #hero-alternative-reward,
 #hero-alternative-reward-1,
-#rewardsa{
+#rewardsa,
+#hero-dangers {
   display: flex;
   align-items: center;
   height: 65vh;
@@ -401,6 +406,32 @@ div button {
   background-repeat: no-repeat;
   background-color: var(--background-color);
   justify-content: center;
+}
+
+#hero-dangers {
+  background-color: var(--background-color);
+  flex-direction: column;
+  height: auto;
+}
+
+.social-media-ranking {
+  flex-direction: column;
+  background-color: transparent !important;
+}
+
+.social-media-ranking h3 {
+  margin: 1px 0px 1px 0px;
+  padding: 1px 0px 1px 0px;
+  width: 20vw;
+}
+
+#hero-dangers h1,
+#hero-dangers h2,
+#hero-dangers h3,
+#dangers h2,
+#dangers h3,
+#dangers h4{
+  color: crimson !important;
 }
 
 .qr-code {

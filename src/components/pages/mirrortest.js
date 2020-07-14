@@ -344,6 +344,7 @@ class Test extends React.Component {
     this.setChosen = this.setChosen.bind(this);
 }
 
+
     setChosen(value, ref) {
         if(this.state.previousref == ref && ref < 9){
 

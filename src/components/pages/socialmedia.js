@@ -7,6 +7,7 @@ import friendship from "../../assets/img/happy-symbol.png";
 import twitter from "../../assets/img/twitter.png";
 import instagram from "../../assets/img/instagram.png";
 import youtube from "../../assets/img/yt_icon_rgb.png";
+import exclamation from "../../assets/img/exclamation.png";
 import facebook from "../../assets/img/facebook.png";
 import tiktok from "../../assets/img/tiktok-logo.png";
 import reddit from "../../assets/img/reddit.png";
@@ -70,7 +71,7 @@ class SocialMedia extends React.Component {
                     <div className="claim-overlay"></div>
                     <div className="wrapper">
                         <h2>Informationen</h2>
-                        <div className="icon-container">
+                        <div id="informations" className="icon-container">
                             <p className="centered">
                                 Die sozialen Medien erfüllen in erster Linie den Zweck der Kommunikation zwischen Menschen und der Unterhaltung.
                             </p>
@@ -90,6 +91,15 @@ class SocialMedia extends React.Component {
                                 <p className="centered">Unterhaltung ist wichtiger denn je und eine Vielfalt an Angeboten ist ebenso wichtig. Plattformen bieten ein großes
                                 Angebot an verschiedenen Unterhaltungsformaten an.</p>
                             </div>
+                            <div className="icon-wrapper">
+                                <div>
+                                    <img className="icon" alt="" src={exclamation} />
+                                </div>
+                                <h3 className="txt-highlight bad">Betrug</h3>
+                                <p className="centered">Nicht alle Plattformen sind sicher! Die sozialen Medien sind ein perfekter Platz für Kriminelle dort ihren
+                                    Machenschaften nachzugehen. Oft kann es sein, dass deine persönlichen Daten einfach so ins Internet
+                                    gelangen. Damit kann großer Schaden angerichtet werden.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,19 +111,22 @@ class SocialMedia extends React.Component {
                             <p className="info-box">Die sozialen Netzwerke</p>
                         </div>
                         <div id="social-media-wrapper">
-                            <div className="image-container-wrapper">
+                            <div id="comparison" className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
                                         <img className="image-icon" src={twitter}/>
                                     </div>
                                     <p className="txt-highlight">Twitter</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Jugendfreie Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Fake News</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>News & Nachrichten</li>
+                                        <li>Memes</li>
+                                        <li>Kontroverse Inhalte</li>
+                                        <li>Meinungen teilen</li>
                                     </ul>
                                 </div>
                                 <div className="image-container">
@@ -121,13 +134,16 @@ class SocialMedia extends React.Component {
                                         <img className="image-icon" src={instagram}/>
                                     </div>
                                     <p className="txt-highlight">Instagram</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Schöne Fotos</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>Fotos & Videos</li>
+                                        <li>Führende Influencerplattform</li>
+                                        <li>Kommentieren & Liken</li>
                                     </ul>
                                 </div>
                                 <div className="image-container">
@@ -135,13 +151,18 @@ class SocialMedia extends React.Component {
                                         <img className="image-icon" src={youtube}/>
                                     </div>
                                     <p className="txt-highlight">YouTube</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Sehr große Auswahl</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Niedrige Hemmschwelle</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>Videos</li>
+                                        <li>Führende Werbeplattform</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Inhalte selbst erstellen</li>
                                     </ul>
                                 </div>
                             </div>
@@ -151,13 +172,18 @@ class SocialMedia extends React.Component {
                                         <img className="image-icon" src={facebook}/>
                                     </div>
                                     <p className="txt-highlight">Facebook</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Nachrichten</h3>
+                                        <h3 className="txt-highlight good">Live Übertragungen</h3>
+                                        <h3 className="txt-highlight mid">Viel Werbung</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>Fotos, Videos & Text</li>
+                                        <li>Führende Werbeplattform</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Erstellen eigener Seiten</li>
                                     </ul>
                                 </div>
                                 <div className="image-container">
@@ -165,13 +191,17 @@ class SocialMedia extends React.Component {
                                         <img className="image-icon" src={tiktok}/>
                                     </div>
                                     <p className="txt-highlight">TikTok</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Kreative Videos</h3>
+                                        <h3 className="txt-highlight mid">Verwirrende Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>Videos & Live Übertragungen</li>
+                                        <li>Führende Influencerplattform</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Selbst Inhalte erstellen</li>
                                     </ul>
                                 </div>
                                 <div className="image-container">
@@ -179,13 +209,18 @@ class SocialMedia extends React.Component {
                                         <img className="image-icon" src={reddit}/>
                                     </div>
                                     <p className="txt-highlight">Reddit</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Sicher</h3>
+                                        <h3 className="txt-highlight good">Wenig Werbung</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Verwirrende Inhalte</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
                                     <ul className="slim-list">
-                                        <li>Hohe Anzahl an Followern</li>
-                                        <li>Hohes Fachwissen</li>
-                                        <li>Sozialkompetenz</li>
-                                        <li>Ein Gewerbe / Job in einer Agentur</li>
-                                        <li>Verkörperung eines Schönheitsideals</li>
-                                        <li>Interessante Inhalte</li>
+                                        <li>Fragen, Diskussionen & Antworten</li>
+                                        <li>Memes & Videos</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Themenbasiert</li>
                                     </ul>
                                 </div>
                             </div>

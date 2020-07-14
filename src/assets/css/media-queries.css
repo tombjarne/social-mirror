@@ -201,6 +201,10 @@
     #harmlos div ul{
         width: 65vw !important;
     }
+
+    .social-media-ranking h3 {
+        width: 60vw !important;
+    }
 }
 
 @media screen and (max-width: 1199px){
