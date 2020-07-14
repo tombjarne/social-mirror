@@ -162,7 +162,7 @@ class Test extends React.Component {
         const generic9 =
             <section className="question-container">
                 <h2>Frage 9:</h2>
-                <p className="slim-text centered">Wofür nutzt du die sozialen Medien?</p>
+                <p className="slim-text centered">Welche sozialen Medien nutzt du?</p>
                 <div className="answer-container">
                     <FormGroup className="cpl-answer">
                         <div className="image-container-wrapper">

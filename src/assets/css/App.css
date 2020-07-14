@@ -215,6 +215,10 @@ div button {
   margin-top: 0px !important;
 }
 
+.icon-container{
+  flex-direction: column;
+}
+
 .pagination {
   list-style: none;
   display: flex;
@@ -443,6 +447,11 @@ div button {
 
 #hero-alternative-reward {
   background-image: url("../../assets/img/city.jpg");
+}
+
+.img-container img,
+.img-container {
+  width: 30vw;
 }
 
 #hero-alternative-reward-1 {
@@ -1049,7 +1058,6 @@ header .menuIcon {
 .slim-list {
   display: flex;
   flex-direction: column;
-  align-self: baseline;
 }
 
 .slim-list li {

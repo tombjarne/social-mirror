@@ -53,8 +53,8 @@ class Dangers extends React.Component {
                             <p className="slim-text">Die sozialen Medien sind leider nicht nur ein Platz des Austausches und der Freude.
                             Viele Jugendliche und Erwachsene haben bereits schlechte Erfahrungen auf Social Media gesammelt.</p>
                             <div className="button-wrapper-vert">
-                                <Button href="#informations" className="helper-btn">Welche Gefahren gibt es?</Button>
-                                <Button href="#comparison" className="helper-btn">Was kann man dagegen tun?</Button>
+                                <Button href="#dangers" className="helper-btn">Welche Gefahren gibt es?</Button>
+                                <Button href="#solutions" className="helper-btn">Was kann man dagegen tun?</Button>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ class Dangers extends React.Component {
                 <div id="demo">
                     <div className="claim-overlay"></div>
                     <div className="wrapper">
-                        <h2>Gefahren</h2>
+                        <h2 id="dangers">Gefahren</h2>
                         <div className="icon-container">
                             <p className="centered">
                                 Die sozialen Medien erfüllen in erster Linie den Zweck der Kommunikation zwischen Menschen und der Unterhaltung.
@@ -192,7 +192,7 @@ class Dangers extends React.Component {
 
                 <div className="info">
                     <div className="wrapper">
-                        <h2>Lösungsansätze</h2>
+                        <h2 id="solutions">Lösungsansätze</h2>
                         <div className="icon-wrapper-big">
                             <p className="info-box">Informationsblase</p>
                         </div>

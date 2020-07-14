@@ -205,6 +205,11 @@
     .social-media-ranking h3 {
         width: 60vw !important;
     }
+
+    .img-container img,
+    .img-container{
+        width: 80vw !important;
+    }
 }
 
 @media screen and (max-width: 1199px){
