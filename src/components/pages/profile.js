@@ -123,22 +123,35 @@ class Analyse extends React.Component {
                         </div>
                         <div className="chart-container">
                             <img src={user_chart} className="chart" />
+                            <h3>Fazit</h3>
+                            <p className="centered">
+                                Gut gemacht! Du hast letzte Woche deine Gesamtzeit auf den sozialen Medien verringert!
+                            </p>
                         </div>
                         <div className="icon-wrapper-big">
                             <p className="info-box">Detail</p>
                         </div>
                         <div className="chart-container">
                             <img src={user_graph} className="chart" />
+                            <div className="legend">
+                                <p id="fb" >Facebook</p>
+                                <p id="in" >Instagram</p>
+                                <p id="yt" >Twitter</p>
+                            </div>
                         </div>
-                        <div className="legend">
-                            <p id="fb" >Facebook</p>
-                            <p id="in" >Instagram</p>
-                            <p id="yt" >Twitter</p>
+                        <div className="icon-wrapper-big">
+                            <p className="info-box">Leaderboard</p>
                         </div>
-                        <h3>Fazit</h3>
-                        <p className="centered">
-                            Gut gemacht! Du hast letzte Woche deine Gesamtzeit auf den sozialen Medien verringert!
-                        </p>
+                        <div className="chart-container">
+                            <div className="wrapper">
+                                <p className="slim-text highlight good" >1. Du</p>
+                                <p className="slim-text highlight bad" >2. Aleksander</p>
+                                <p className="slim-text highlight bad" >3. Marius</p>
+                            </div>
+                            <p className="centered">
+                                Glückwunsch! Du bist auf dem ersten Platz! Bleib weiterhin am Ball, um eine weitere Belohnung freizuschalten.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

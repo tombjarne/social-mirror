@@ -771,6 +771,13 @@ iframe {
   cursor: pointer;
 }
 
+#harmlos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .chart-container {
   display: flex;
   justify-content: center;
