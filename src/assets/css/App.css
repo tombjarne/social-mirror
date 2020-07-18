@@ -169,6 +169,7 @@ a, button {
   background-color: white;
   border-radius: 40px;
   padding: 0px !important;
+  width: 30vw;
 }
 
 .image-icon {
@@ -1110,6 +1111,7 @@ header .menuIcon {
 .slim-list {
   display: flex;
   flex-direction: column;
+  margin-top: 45px;
 }
 
 .slim-list li {

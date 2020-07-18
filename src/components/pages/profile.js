@@ -49,9 +49,11 @@ class Analyse extends React.Component {
                     <div id="hero-cta">
                         <div>
                             <h1>Hallo Jon!</h1>
-                            <span className="highlight">Instagram</span>
-                            <span className="highlight">Facebook</span>
-                            <span className="highlight">Twitter</span>
+                            <div className="legend">
+                                <p id="fb" >Facebook</p>
+                                <p id="in" >Instagram</p>
+                                <p id="yt" >Twitter</p>
+                            </div>
                             <div className="spacing"></div>
                             <h3 className="centered">Letzte Woche auf einen Blick</h3>
                             <div className="button-wrapper-vert">
@@ -187,13 +189,16 @@ class Analyse extends React.Component {
                             <div className="icon-wrapper-big">
                                 <p className="info-box">Erinnerungen</p>
                             </div>
-                            <span className="highlight-small">ab 30 Minuten am Stück</span>
+                            <div className="spacing"></div>
+                            <span className="txt-highlight good">ab 30 Minuten am Stück</span>
+                            <div className="spacing"></div>
                         </div>
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
                                 <p className="info-box">Ruhezeit</p>
                             </div>
-                            <span className="highlight-small">Täglich ab 22:30</span>
+                            <div className="spacing"></div>
+                            <span className="txt-highlight good">Täglich ab 22:30</span>
                         </div>
                     </div>
                 </div>

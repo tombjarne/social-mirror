@@ -72,7 +72,7 @@ class SocialMedia extends React.Component {
                     <div className="wrapper">
                         <h2>Informationen</h2>
                         <div id="informations" className="icon-container">
-                            <p className="centered">
+                            <p className="centered slim-text">
                                 Die sozialen Medien erfüllen in erster Linie den Zweck der Kommunikation zwischen Menschen und der Unterhaltung.
                             </p>
                             <div className="icon-wrapper">
@@ -80,7 +80,7 @@ class SocialMedia extends React.Component {
                                     <img id="small-img" className="icon" alt="" src={friendship} />
                                 </div>
                                 <h3>Freunde</h3>
-                                <p className="centered">Mit Freunden und Bekannten kommunizieren, Videos und Fotos teilen und einander anrufen: fast alle der etablierten
+                                <p className="centered slim-text">Mit Freunden und Bekannten kommunizieren, Videos und Fotos teilen und einander anrufen: fast alle der etablierten
                                 sozialen Medien haben diese oder vergleichbare Funktionen.</p>
                             </div>
                             <div className="icon-wrapper">
@@ -88,7 +88,7 @@ class SocialMedia extends React.Component {
                                     <img className="icon" alt="" src={jokes} />
                                 </div>
                                 <h3>Entertainment</h3>
-                                <p className="centered">Unterhaltung ist wichtiger denn je und eine Vielfalt an Angeboten ist ebenso wichtig. Plattformen bieten ein großes
+                                <p className="centered slim-text">Unterhaltung ist wichtiger denn je und eine Vielfalt an Angeboten ist ebenso wichtig. Plattformen bieten ein großes
                                 Angebot an verschiedenen Unterhaltungsformaten an.</p>
                             </div>
                             <div className="icon-wrapper">
@@ -96,7 +96,7 @@ class SocialMedia extends React.Component {
                                     <img className="icon" alt="" src={exclamation} />
                                 </div>
                                 <h3 className="txt-highlight">Betrug</h3>
-                                <p className="centered">Nicht alle Plattformen sind sicher! Die sozialen Medien sind ein perfekter Platz für Kriminelle dort ihren
+                                <p className="centered slim-text">Nicht alle Plattformen sind sicher! Die sozialen Medien sind ein perfekter Platz für Kriminelle dort ihren
                                     Machenschaften nachzugehen. Oft kann es sein, dass deine persönlichen Daten einfach so ins Internet
                                     gelangen. Damit kann großer Schaden angerichtet werden.</p>
                             </div>
@@ -118,9 +118,11 @@ class SocialMedia extends React.Component {
                                     </div>
                                     <p className="txt-highlight">Twitter</p>
                                     <div className="social-media-ranking">
-                                        <h3 className="txt-highlight good">Jugendfreie Inhalte</h3>
+                                        <h3 className="txt-highlight good">Memes</h3>
                                         <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
                                         <h3 className="txt-highlight bad">Fake News</h3>
+                                        <h3 className="txt-highlight bad">Toxic Community</h3>
+                                        <h3 className="txt-highlight bad">Hass & Hetze</h3>
                                     </div>
                                     <ul className="slim-list">
                                         <li>News & Nachrichten</li>
@@ -196,6 +198,7 @@ class SocialMedia extends React.Component {
                                         <h3 className="txt-highlight mid">Verwirrende Inhalte</h3>
                                         <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
                                         <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                        <h3 className="txt-highlight bad">Chinas Zensur</h3>
                                     </div>
                                     <ul className="slim-list">
                                         <li>Videos & Live Übertragungen</li>
@@ -210,11 +213,12 @@ class SocialMedia extends React.Component {
                                     </div>
                                     <p className="txt-highlight">Reddit</p>
                                     <div className="social-media-ranking">
-                                        <h3 className="txt-highlight good">Sicher</h3>
-                                        <h3 className="txt-highlight good">Wenig Werbung</h3>
+                                        <h3 className="txt-highlight good">Memes</h3>
+                                        <h3 className="txt-highlight good">Kommunikation zwischen Groß und Klein</h3>
                                         <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
                                         <h3 className="txt-highlight mid">Verwirrende Inhalte</h3>
                                         <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                        <h3 className="txt-highlight bad">Toxic Community</h3>
                                     </div>
                                     <ul className="slim-list">
                                         <li>Fragen, Diskussionen & Antworten</li>
