@@ -18,7 +18,7 @@ class Knowledge extends React.Component {
     render() {
         return (
             <div id="reg-page" className="claim-actions double-feature">
-                <Sidebar />
+                {/*<Sidebar />*/}
                 <h1 className="big-title">Wissen</h1>
                 <div className="wrapper">
                     <p className="slim-text">

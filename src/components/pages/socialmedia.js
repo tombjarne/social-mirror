@@ -95,7 +95,7 @@ class SocialMedia extends React.Component {
                                 <div>
                                     <img className="icon" alt="" src={exclamation} />
                                 </div>
-                                <h3 className="txt-highlight bad">Betrug</h3>
+                                <h3 className="txt-highlight">Betrug</h3>
                                 <p className="centered">Nicht alle Plattformen sind sicher! Die sozialen Medien sind ein perfekter Platz für Kriminelle dort ihren
                                     Machenschaften nachzugehen. Oft kann es sein, dass deine persönlichen Daten einfach so ins Internet
                                     gelangen. Damit kann großer Schaden angerichtet werden.</p>

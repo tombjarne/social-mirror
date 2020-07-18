@@ -96,13 +96,14 @@ class Home extends React.Component {
                         <h2>Mehr über Influencer</h2>
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
-                                <p className="info-box">Blick hinter die Kulissen</p>
+                                <p className="info-box">Neugierig geworden?</p>
                             </div>
                             <p className="slim-text">
                                 Wolltest du schon immer einmal deinem Lieblingsinfluencer auf den Zahn fühlen? Wir zeigen dir, wie Influencer ihr Geld verdienen und welche
                                 Mittel sie dazu benutzen. Probier es aus!
                             </p>
                         </div>
+                        <Button href="./wissen/influencer/analyse" className="helper-btn cta-a">Blick hinter die Kulissen</Button>
                     </div>
                 </div>
                 <div className="info-bright">

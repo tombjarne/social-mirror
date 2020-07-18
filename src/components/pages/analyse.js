@@ -50,7 +50,7 @@ class Analyse extends React.Component {
                             <h1>Deine Wahl: </h1>
                             <span className="highlight">@elonmusk</span>
                             <p className="slim-text">Elon Musk ist ein kanadisch-US-amerikanischer Unternehmer. Besonders bekannt für</p>
-                            <span className="txt-highlight"> Space X</span> <span className="txt-highlight">Tesla</span>
+                            <span className="highlight"> Space X</span> <span className="highlight">Tesla</span>
                         </div>
                     </div>
                 </div>

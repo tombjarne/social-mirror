@@ -6,6 +6,18 @@ h1,h2,h3,h4,h5 {
   color: var(--heading-color)!important;
 }
 
+body * {
+  font-family: Poppins !important;
+}
+
+p {
+  font-family: Poppins Medium !important;
+}
+
+li {
+  font-family: Poppins Light !important;
+}
+
 a, button {
   border-radius: 80px!important;
   font-family: Poppins !important;
@@ -56,13 +68,11 @@ a, button {
 }
 
 .icon-wrapper-big {
-  background-color: white;
-  border-radius: 100px;
   font-weight: bold;
   text-align: center;
-  margin-top: 35px;
-  font-size: 16px;
-  color: var(--background-color-light);
+  font-size: 20px;
+  color: var(--heading-color);
+  border-bottom: 3px solid white;
   width: 30vw;
 }
 
@@ -156,7 +166,6 @@ a, button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15vw;
   background-color: white;
   border-radius: 40px;
   padding: 0px !important;
@@ -285,7 +294,7 @@ div button {
 
 #social-media-wrapper div .image-container {
   margin: 20px 0px 20px 0px;
-  background-color: var(--background-color) !important;
+  background-color: var(--background-color-light) !important;
 }
 
 #social-media-wrapper .image-container-wrapper {
@@ -404,6 +413,7 @@ div button {
 #hero-alternative,
 #hero-alternative-reward,
 #hero-alternative-reward-1,
+#hero-alternative-a,
 #rewardsa,
 #hero-dangers {
   display: flex;
@@ -510,11 +520,23 @@ div button {
   background-image: url("./../../assets/img/satellite-693226_1920.jpg");
 }
 
+#hero-alternative-a {
+  background-image: url("./../../assets/img/city.jpg");
+}
+
 #hero-cta {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   margin-top: 35px;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+#hero-cta .txt-highlight {
+  background-color: white;
 }
 
 #hero-cta h1 {
@@ -557,6 +579,12 @@ div button {
   border-radius: 25px !important;
   padding: 5px;
   background-color: var(--background-color);
+}
+
+iframe {
+  border-radius: 25px;
+  background-color: var(--background-color-light);
+  padding: 5px;
 }
 
 #video-player-slim div iframe {
@@ -652,6 +680,7 @@ div button {
   --heading-color: #58B4FB;
   --txt-highlight: #19C5FB;
   --background-a: #3D3F54;
+  --link-color: lightseagreen;
 }
 
 .legend {
@@ -742,8 +771,16 @@ div button {
   cursor: pointer;
 }
 
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .chart {
-  width: 20vw;
+  display: flex;
+  width: 30vw;
   margin-top: 25px;
 }
 
@@ -1043,6 +1080,11 @@ header .menuIcon {
   border-radius: 25px;
 }
 
+.large-input-group {
+  flex-direction: row !important;
+  display: flex;
+}
+
 .input-group button,
 .large-input-group button {
   font-size: 11px;
@@ -1081,10 +1123,10 @@ header .menuIcon {
   font-weight: bolder;
   font-size: 18px;
   color: dodgerblue;
-  background-color: white;
   padding: 15px;
   border-radius: 25px;
   text-align: center !important;
+  margin-top: 0px !important;
 }
 
 #bedenklich .txt-highlight {

@@ -1,10 +1,10 @@
 import React from "react";
 
 import Button from "react-bootstrap/Button";
-import elon from "../../assets/img/elon-musk-profilbild.jpg";
-import work from "../../assets/img/hard-work.png";
+import logan from "../../assets/img/logan-profilbild.jpg";
+import exclamation from "../../assets/img/exclamation.png";
 import jokes from "../../assets/img/memes.png";
-import chart from "../../assets/img/chart.png";
+import chart from "../../assets/img/chart-logan.png";
 import Modal from "react-bootstrap/Modal"
 
 import ReactPlayer from "react-player";
@@ -17,6 +17,8 @@ class Analysea extends React.Component {
         this.state = {
             clicked: false,
             age: false,
+            text: "",
+            url: "",
         };
         this.handleOpen = this.handleOpen.bind(this);
         this.handleClose = this.handleClose.bind(this);
@@ -26,6 +28,9 @@ class Analysea extends React.Component {
     handleOpen(){
         this.setState({
             clicked: true,
+            text: "In einem seiner kontroversesten Videos hat Logan Paul einen Wald in Japan besucht, in dem viele Menschen Suizid begangen haben. In seinem Video" +
+                "zeigte Logan die Leichen und witzelte über die Umgekommenen und deren Todesumstände.",
+            url: "https://www.youtube.com/watch?v=WjNFGZLJLss",
         });
     }
 
@@ -44,13 +49,13 @@ class Analysea extends React.Component {
     render() {
         return (
             <section id="home">
-                <div id="hero-alternative">
+                <div id="hero-alternative-a">
                     <div id="hero-cta">
                         <div>
                             <h1>Deine Wahl: </h1>
-                            <span className="highlight">@elonmusk</span>
-                            <p className="slim-text">Elon Musk ist ein kanadisch-US-amerikanischer Unternehmer. Besonders bekannt für</p>
-                            <span className="txt-highlight"> Space X</span> <span className="txt-highlight">Tesla</span>
+                            <span className="highlight">@loganpaul</span>
+                            <p className="slim-text">Logan Paul ist ein US-amerikanischer Social-Media-Star. Besonders bekannt für</p>
+                            <span className="txt-highlight">Suicide Forest</span> <span className="txt-highlight">Boxkampf mit KSI</span>
                         </div>
                     </div>
                 </div>
@@ -58,9 +63,9 @@ class Analysea extends React.Component {
                     <div className="wrapper">
                         <div id="hero-cta">
                             <div className="profile-wrapper">
-                                <img className="profile-img" src={elon}/>
-                                <h2>Elon Musk </h2>
-                                <span className="highlight">36,6 Mio. Follower</span>
+                                <img className="profile-img" src={logan}/>
+                                <h2>Logan Paul</h2>
+                                <span className="highlight">18,2 Mio. Follower</span>
                             </div>
                         </div>
                     </div>
@@ -68,22 +73,22 @@ class Analysea extends React.Component {
                 <div id="demo">
                     <div className="claim-overlay"></div>
                     <div className="wrapper">
-                        <h2>Elon Musk ist bekannt für</h2>
+                        <h2>Logan Paul ist bekannt für</h2>
                         <div className="icon-container">
                             <div className="icon-wrapper">
                                 <div>
                                     <img id="small-img" className="icon" alt="" src={jokes} />
                                 </div>
-                                <h3>Memes</h3>
-                                <p className="centered">Elon ist bekannt für seine humoristischen und sarkastischen Beiträge auf den sozialen Medien und im Fernsehen.</p>
+                                <h3>Fragwürdiger Humor</h3>
+                                <p className="centered">Logan ist bekannt für seine kindhaften Scherze und seinen gewöhnungsbedürftigen Humor.</p>
                             </div>
                             <div className="icon-wrapper">
                                 <div>
-                                    <img className="icon" alt="" src={work} />
+                                    <img className="icon" alt="" src={exclamation} />
                                 </div>
-                                <h3>Harte Arbeit</h3>
-                                <p className="centered">Nach seinem Motto "work every waking hour" ist Elon ein sehr hart arbeitender Mensch, der sein Bestes gibt seine
-                                    Firmen am Leben zu erhalten und grandiose Dinge zu erschaffen.</p>
+                                <h3>Kontroversen</h3>
+                                <p className="centered">Logan Paul ist besonders für Kontroversen und Auseinandersetzugen bekannt. Seine bekanntesten Videos sind
+                                besonders anstößig und umstritten.</p>
                             </div>
                         </div>
                     </div>
@@ -93,22 +98,17 @@ class Analysea extends React.Component {
                     <div className="wrapper">
                         <h2>Aktivität</h2>
                         <div className="icon-wrapper-big">
-                            <p className="info-box">Elon Musk im Ranking</p>
+                            <p className="info-box">Logan Paul im Ranking</p>
                         </div>
                         <p className="slim-text">
                             <div className="ranking-harmless">
                                 <div className="ranking-wrapper">
-                                    <div className="authentic-wrapper">
-                                        <h3 className="txt-highlight authentic-parent"><span className="authentic">*</span>Authentisch</h3>
-                                    </div>
-                                    <h3 className="txt-highlight good">Nicht gefährlich</h3>
-                                    <h3 className="txt-highlight good">Angemessene Inhalte</h3>
-                                    <h3 className="txt-highlight good">Kein Clickbait</h3>
-                                    <h3 className="txt-highlight good">Jugendfreie Inhalte</h3>
-                                    <h3 className="txt-highlight good">Keine Fake News</h3>
-                                    <h3 className="txt-highlight mid">Sarkasmus</h3>
-                                    <h3 className="txt-highlight mid">Ironie</h3>
-                                    <h3 className="txt-highlight bad">Drogenkonsum<span className="info-box-helper" onClick={this.handleOpen}>i</span></h3>
+                                    <h3 className="txt-highlight good">Unterhaltungszwecke</h3>
+                                    <h3 className="txt-highlight mid">Clickbait</h3>
+                                    <h3 className="txt-highlight mid">Vulgärsprache</h3>
+                                    <h3 className="txt-highlight mid">Potenziell gefährlich</h3>
+                                    <h3 className="txt-highlight mid">Keine Jugendfreie Inhalte</h3>
+                                    <h3 className="txt-highlight bad">Suizid<span className="info-box-helper" onClick={this.handleOpen}>i</span></h3>
                                     {
                                         this.state.clicked == true &&
                                         (
@@ -118,8 +118,7 @@ class Analysea extends React.Component {
                                                 </Modal.Header>
 
                                                 <Modal.Body>
-                                                    <p>Elon Musk ist kein Influencer der Drongenkonsum verherrlicht oder darstellt. In einem seiner Interviews
-                                                        gab es einen eher harmlosen Zwischenfall mit der Droge Marihuana. Daraufhin stürzten die Aktien seiner Firmen in die Tiefe.</p>
+                                                    <p>{this.state.text}</p>
                                                     <div className="play-slim">
                                                         {
                                                             this.state.age == false &&
@@ -130,7 +129,7 @@ class Analysea extends React.Component {
                                                         {
                                                             this.state.age == true &&
                                                             (
-                                                                <ReactPlayer id="video-player-slim" url="https://www.youtube.com/watch?v=Dr450QamBOU" />
+                                                                <ReactPlayer id="video-player-slim" url={this.state.url} />
                                                             )
                                                         }
                                                     </div>
@@ -147,20 +146,20 @@ class Analysea extends React.Component {
                         <div className="chart-container">
                             <img src={chart} className="chart" />
                             <h3>Fazit</h3>
-                            <p className="centered">Elon Musk ist ein ungefährlicher Influencer. Seine Postings belaufen sich nicht auf Werbung oder Brand Deals
-                                für andere Firmen. Als Firmeninhaber und Milliardär wirbt er lediglich für seine eigenen Firmen: oft etwas humoristisch,
-                                und sarkatisch. Außer wenigen Ausrutschern ist Elon sich seiner Linie treu geblieben. Ihm kann man unbedenklich folgen!</p>
+                            <p className="centered">Logan Paul ist ein eher als gefährlich einzustufender Influencer.
+                                Nahezu alle seiner Beiträge werden mit einen Link oder einem gesponsertem Produkt versehen. Des Weiteren stellt er gerne kontroverse und
+                                beleidigende Inhalte auf seinen Plattformen zur Verfügung.</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="info">
                     <div className="wrapper">
-                        <h2>Best of Elon Musk</h2>
+                        <h2>Best of Logan Paul</h2>
                         <div className="icon-container-alternativ">
                             <div className="claim-actions">
                                 <div className="play">
-                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=lKUf7DCSImM" />
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=fYK27ivcRLU&t=33s" />
                                 </div>
                             </div>
                         </div>
@@ -174,17 +173,18 @@ class Analysea extends React.Component {
                             <div className="icon-wrapper-big">
                                 <p className="info-box">Brand Deals</p>
                             </div>
-                            <p>
-                                Keine Brand Deals bekannt.
+                            <p className="icon-container-alternativ">
+                                <span href="https://www.versace.com/de/de-de/home/" className="highlight-small">Versace</span>
+                                <span href="https://www.mercedes-benz.de/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE" className="highlight-small">Mercedes Benz</span>
+                                <span href="https://maverickclothing.com/" className="highlight-small">Maverick</span>
                             </p>
                         </div>
                         <div className="icon-container-alternativ">
                             <div className="icon-wrapper-big">
                                 <p className="info-box">Werbung</p>
                             </div>
-                            <span href="https://www.tesla.com/" className="highlight-small">Tesla</span>
-                            <span href="https://www.spacex.com/" className="highlight-small">SpaceX</span>
-                            <span href="https://www.boringcompany.com/" className="highlight-small">The Boring Company</span>
+                            <span href="https://maverickclothing.com/" className="highlight-small">Maverick</span>
+                            <span href="https://www.versace.com/de/de-de/home/" className="highlight-small">Versace</span>
                         </div>
                     </div>
                 </div>
