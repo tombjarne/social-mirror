@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import influencer from "../../assets/img/users-solid.svg";
 import user from "../../assets/img/user-alt-solid.svg";
 import money from "../../assets/img/money-check-alt-solid.svg";
+import videos from "../../assets/img/camera.png";
 import ReactPlayer from "react-player";
 
 class Home extends React.Component {
@@ -48,6 +49,13 @@ class Home extends React.Component {
                                 </div>
                                 <h3>Influencer</h3>
                                 <p className="centered">Wie viel Einfluss haben Influencer? Was machen Influencer? Erfahre alles rund ums Thema Influencer</p>
+                            </div>
+                            <div className="icon-wrapper">
+                                <div>
+                                    <img className="icon" alt="" src={videos} />
+                                </div>
+                                <h3>Videos</h3>
+                                <p className="centered">Wir haben dir eine Sammlung von sehenswerten Filmen und Reportagen zusammengestellt, bei denen es Rund um Social Media geht</p>
                             </div>
                         </div>
                     </div>
@@ -117,6 +125,18 @@ class Home extends React.Component {
                             </p>
                         </div>
                         <Button href="./" className="helper-btn cta-a">Erfahre mehr</Button>
+                    </div>
+                </div>
+                <div className="info">
+                    <div className="wrapper">
+                        <h2>Videos</h2>
+                        <div className="icon-container-alternativ">
+                            <p className="slim-text">
+                                Sieh dir diese von uns kurierten Videos zum Thema Social Media an! Dabei geht's rund ums Berufsbild, die Arbeiten und die Folgen des
+                                Influencerdaseins. Schau vorbei!
+                            </p>
+                        </div>
+                        <Button onClick={() => window.location.href="./wissen/influencer/videos"} className="helper-btn cta">Zu den Videos</Button>
                     </div>
                 </div>
             </section>

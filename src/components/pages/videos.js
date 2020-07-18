@@ -28,6 +28,8 @@ class Influencers extends React.Component {
                                     <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=f0TCqNPkyiU" />
                                     <h2 id="if-beruf">Beruf Influencer</h2>
                                     <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=tVQOHTXJkFk" />
+                                    <h2 id="zensur">Zensur auf Social Media</h2>
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=umafqnmvRsY" />
                                 </div>
                             </div>
                         </div>

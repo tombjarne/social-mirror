@@ -37,7 +37,7 @@ class Knowledge extends React.Component {
                             Kehrseite der Medallie. Viele Jugendliche haben bereits Erfahrungen mit Cyber Mobbing gesammelt oder unbeabsichtigt auf sensitive Inhalte
                             geklickt, da diese als harmlos getarnt waren...
                         </p>
-                        <Button href="#video-player" className="helper-btn white" onClick={() => window.location.href="gefahren"}>Mehr zu den Gefahren</Button>
+                        <Button href="#video-player" className="helper-btn white" onClick={() => window.location.href="./wissen/gefahren"}>Mehr zu den Gefahren</Button>
                     </div>
                     <div className="wrapper">
                         <h2 id="influencer">Influencer</h2>
