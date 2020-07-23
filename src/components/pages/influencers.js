@@ -30,7 +30,7 @@ class Influencers extends React.Component {
                                     aria-describedby="basic-addon1"
                                     id="search-input"
                                 />
-                                <Button type="submit" onClick={() => window.location.href="./analyse/1000"}>Suchen</Button>
+                                <Button type="submit" onClick={() => window.location.href="./influencer/analyse/1000"}>Suchen</Button>
                             </div>
                         </div>
                     </div>

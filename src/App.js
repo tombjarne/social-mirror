@@ -8,6 +8,7 @@ import Profile from "./components/pages/profile";
 import Test from "./components/pages/mirrortest";
 import Influencers from "./components/pages/influencers";
 import SocialMedia from "./components/pages/socialmedia";
+import Recommendations from "./components/pages/recommendations";
 import Gefahren from "./components/pages/dangers";
 import AnalyseA from "./components/pages/analysea"
 import Analyse from "./components/pages/analyse"
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/rewards/1001" component={Rewards} />
                     <Route path="/rewards" component={RewardsPage} />
                     <Route path="/coupons" component={Coupons} />
+                    <Route path="/empfehlungen" component={Recommendations} />
                     <Route path="/wissen" component={Knowledge} />
                     <Route path="/profil" component={Profile} />
                     <Route path="/test" component={Test} />

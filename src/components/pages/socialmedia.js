@@ -11,6 +11,9 @@ import exclamation from "../../assets/img/exclamation.png";
 import facebook from "../../assets/img/facebook.png";
 import tiktok from "../../assets/img/tiktok-logo.png";
 import reddit from "../../assets/img/reddit.png";
+import mightynetworks from "../../assets/img/mightynetworks.png";
+import meetup from "../../assets/img/Meetup_Logo.png";
+import localpost from "../../assets/img/localpost.png";
 
 class SocialMedia extends React.Component {
 
@@ -225,6 +228,60 @@ class SocialMedia extends React.Component {
                                         <li>Memes & Videos</li>
                                         <li>Kommentieren & Liken</li>
                                         <li>Themenbasiert</li>
+                                    </ul>
+                                </div>
+                                <div className="image-container">
+                                    <div>
+                                        <img className="image-icon" src={mightynetworks}/>
+                                    </div>
+                                    <h3 className="txt-highlight">MightyNetworks</h3>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Große Auswahl</h3>
+                                        <h3 className="txt-highlight good">Spezifische Communities</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Verwirrende Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Sozialisierung schwierig</h3>
+                                        <h3 className="txt-highlight bad">Admin- abhängig</h3>
+                                    </div>
+                                    <ul className="slim-list">
+                                        <li>Spezielle Fragen</li>
+                                        <li>Nischenthemen & Interessen</li>
+                                        <li>Chatten</li>
+                                        <li>Kommentieren</li>
+                                    </ul>
+                                </div>
+                                <div className="image-container">
+                                    <div>
+                                        <img className="image-icon" src={meetup}/>
+                                    </div>
+                                    <h3 className="txt-highlight">Meetup</h3>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Professionell</h3>
+                                        <h3 className="txt-highlight good">Breite Auswahl an Gruppen</h3>
+                                        <h3 className="txt-highlight mid">Ausgrenzung</h3>
+                                        <h3 className="txt-highlight bad">Eventuell schlechte Meetups</h3>
+                                    </div>
+                                    <ul className="slim-list">
+                                        <li>Austausch & Treffen</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Meetups erstellen & teilnehmen</li>
+                                    </ul>
+                                </div>
+                                <div className="image-container">
+                                    <div>
+                                        <img className="image-icon" src={localpost}/>
+                                    </div>
+                                    <h3 className="txt-highlight">local post</h3>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Lokale Welt entdecken</h3>
+                                        <h3 className="txt-highlight good">Aktuelle Geschehnisse</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight bad">Eventuell schlechte Meetups</h3>
+                                    </div>
+                                    <ul className="slim-list">
+                                        <li>Aktuelle, lokale Unterhaltungen</li>
+                                        <li>Liken, Kommentieren & Speichern</li>
+                                        <li>Videos & Meetups erstellen</li>
                                     </ul>
                                 </div>
                             </div>

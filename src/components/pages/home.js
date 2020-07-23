@@ -111,7 +111,7 @@ class Home extends React.Component {
                                 Mittel sie dazu benutzen. Probier es aus!
                             </p>
                         </div>
-                        <Button href="./wissen/influencer/analyse" className="helper-btn cta-a">Blick hinter die Kulissen</Button>
+                        <Button href="./wissen/influencer" className="helper-btn cta-a">Blick hinter die Kulissen</Button>
                     </div>
                 </div>
                 <div className="info-bright">

@@ -331,7 +331,6 @@ div button {
 #menu-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: absolute;
   top: 50px;
@@ -394,7 +393,6 @@ div button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 18px;
   font-weight: bold;
 }
