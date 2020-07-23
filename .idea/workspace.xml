@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebdd4903-3aa7-45cb-9987-1c4807fd395f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/facebook-2-map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/newcomer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/recommendations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/recommendations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1595177987872" duration="620000" />
       <workItem from="1595340167175" duration="342000" />
       <workItem from="1595491454310" duration="4397000" />
-      <workItem from="1595508239389" duration="2956000" />
+      <workItem from="1595508239389" duration="3522000" />
     </task>
     <task id="LOCAL−00001" summary="add landingpage">
       <created>1593620808704</created>
@@ -259,7 +257,13 @@
       <option name="presentableId" value="LOCAL−00025" />
       <updated>1595509723176</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL−00026" summary="Update page">
+      <created>1595511205390</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1595511205390</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,10 +314,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594711707478" />
-    <state x="-1354" y="88" key="CommitChangelistDialog2" timestamp="1595509722630">
+    <state x="-1354" y="88" key="CommitChangelistDialog2" timestamp="1595511204954">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1354" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1595509722630" />
+    <state x="-1354" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1595511204954" />
     <state x="566" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1594365334304" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1594714135880">
       <screen x="-1920" y="0" width="1920" height="1040" />

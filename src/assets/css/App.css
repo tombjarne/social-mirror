@@ -402,6 +402,12 @@ div button {
   margin-bottom: 5px;
 }
 
+.page-links {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 30px;
+}
+
 .page-links:hover {
   color: var(--highlight-color)!important;
 }
@@ -655,6 +661,11 @@ iframe {
 #footer div a,
 .footer-section {
   color: white;
+}
+
+#footer-nav {
+  display: flex;
+  align-self: end;
 }
 
 .footer-section {
