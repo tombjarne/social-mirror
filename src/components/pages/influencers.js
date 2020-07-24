@@ -185,7 +185,7 @@ class Influencers extends React.Component {
                                 scheint.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta-a">Teste Dich!</Button>
+                        <Button className="helper-btn cta" onClick={() => window.location.href="/empfehlungen"}>Hier gibt's Tipps</Button>
                     </div>
                 </div>
             </section>
