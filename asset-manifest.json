@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/social-mirror/static/css/main.e0ba87f8.chunk.css",
+    "main.css": "/social-mirror/static/css/main.2afcbc6c.chunk.css",
     "main.js": "/social-mirror/static/js/main.bbca754b.chunk.js",
     "main.js.map": "/social-mirror/static/js/main.bbca754b.chunk.js.map",
     "runtime-main.js": "/social-mirror/static/js/runtime-main.d66ed26a.js",
@@ -8,9 +8,9 @@
     "static/js/2.f2205d57.chunk.js": "/social-mirror/static/js/2.f2205d57.chunk.js",
     "static/js/2.f2205d57.chunk.js.map": "/social-mirror/static/js/2.f2205d57.chunk.js.map",
     "index.html": "/social-mirror/index.html",
-    "precache-manifest.6dbf0ccc3ae3b8fddea3e399e8c4d5a5.js": "/social-mirror/precache-manifest.6dbf0ccc3ae3b8fddea3e399e8c4d5a5.js",
+    "precache-manifest.873c248afd62f2a6f60d968ecccf5995.js": "/social-mirror/precache-manifest.873c248afd62f2a6f60d968ecccf5995.js",
     "service-worker.js": "/social-mirror/service-worker.js",
-    "static/css/main.e0ba87f8.chunk.css.map": "/social-mirror/static/css/main.e0ba87f8.chunk.css.map",
+    "static/css/main.2afcbc6c.chunk.css.map": "/social-mirror/static/css/main.2afcbc6c.chunk.css.map",
     "static/js/2.f2205d57.chunk.js.LICENSE.txt": "/social-mirror/static/js/2.f2205d57.chunk.js.LICENSE.txt",
     "static/media/Ghost Logo - Primary.png": "/social-mirror/static/media/Ghost Logo - Primary.df8bfd0f.png",
     "static/media/Meetup_Logo.png": "/social-mirror/static/media/Meetup_Logo.c89d9a20.png",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.d66ed26a.js",
     "static/js/2.f2205d57.chunk.js",
-    "static/css/main.e0ba87f8.chunk.css",
+    "static/css/main.2afcbc6c.chunk.css",
     "static/js/main.bbca754b.chunk.js"
   ]
 }
