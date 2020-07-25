@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/social-mirror/static/css/main.afc73667.chunk.css",
-    "main.js": "/social-mirror/static/js/main.0e54a70f.chunk.js",
-    "main.js.map": "/social-mirror/static/js/main.0e54a70f.chunk.js.map",
+    "main.js": "/social-mirror/static/js/main.19f5f061.chunk.js",
+    "main.js.map": "/social-mirror/static/js/main.19f5f061.chunk.js.map",
     "runtime-main.js": "/social-mirror/static/js/runtime-main.d66ed26a.js",
     "runtime-main.js.map": "/social-mirror/static/js/runtime-main.d66ed26a.js.map",
     "static/js/2.f2205d57.chunk.js": "/social-mirror/static/js/2.f2205d57.chunk.js",
     "static/js/2.f2205d57.chunk.js.map": "/social-mirror/static/js/2.f2205d57.chunk.js.map",
     "index.html": "/social-mirror/index.html",
-    "precache-manifest.bafad363811d33b57590f695cfe4530b.js": "/social-mirror/precache-manifest.bafad363811d33b57590f695cfe4530b.js",
+    "precache-manifest.505d84583cea02031b85fe202f9e66a2.js": "/social-mirror/precache-manifest.505d84583cea02031b85fe202f9e66a2.js",
     "service-worker.js": "/social-mirror/service-worker.js",
     "static/css/main.afc73667.chunk.css.map": "/social-mirror/static/css/main.afc73667.chunk.css.map",
     "static/js/2.f2205d57.chunk.js.LICENSE.txt": "/social-mirror/static/js/2.f2205d57.chunk.js.LICENSE.txt",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.d66ed26a.js",
     "static/js/2.f2205d57.chunk.js",
     "static/css/main.afc73667.chunk.css",
-    "static/js/main.0e54a70f.chunk.js"
+    "static/js/main.19f5f061.chunk.js"
   ]
 }
