@@ -58,7 +58,7 @@ class Analyse extends React.Component {
                     <div className="wrapper">
                         <div id="hero-cta">
                             <div className="profile-wrapper">
-                                <img className="profile-img" src={elon}/>
+                                <img alt=""className="profile-img" src={elon}/>
                                 <h2>Elon Musk </h2>
                                 <span className="highlight">36,6 Mio. Follower</span>
                             </div>
@@ -110,7 +110,7 @@ class Analyse extends React.Component {
                                     <h3 className="txt-highlight mid">Ironie</h3>
                                     <h3 className="txt-highlight bad">Drogenkonsum<span className="info-box-helper" onClick={this.handleOpen}>i</span></h3>
                                     {
-                                        this.state.clicked == true &&
+                                        this.state.clicked === true &&
                                         (
                                             <Modal.Dialog>
                                                 <Modal.Header closeButton onClick={this.handleClose}>
@@ -122,13 +122,13 @@ class Analyse extends React.Component {
                                                     gab es einen eher harmlosen Zwischenfall mit der Droge Marihuana. Daraufhin stürzten die Aktien seiner Firmen in die Tiefe.</p>
                                                     <div className="play-slim">
                                                         {
-                                                            this.state.age == false &&
+                                                            this.state.age === false &&
                                                             (
                                                                 <Button onClick={this.showVideo} className="accept-btn">Alter bestätigen um Video anzusehen</Button>
                                                             )
                                                         }
                                                         {
-                                                            this.state.age == true &&
+                                                            this.state.age === true &&
                                                             (
                                                                 <ReactPlayer id="video-player-slim" url="https://www.youtube.com/watch?v=Dr450QamBOU" />
                                                             )
@@ -145,7 +145,7 @@ class Analyse extends React.Component {
                             <p className="info-box">Aufteilung</p>
                         </div>
                         <div className="chart-container">
-                            <img src={chart} className="chart" />
+                            <img alt="" src={chart} className="chart" />
                             <h3>Fazit</h3>
                             <p className="centered">Elon Musk ist ein ungefährlicher Influencer. Seine Postings belaufen sich nicht auf Werbung oder Brand Deals
                             für andere Firmen. Als Firmeninhaber und Milliardär wirbt er lediglich für seine eigenen Firmen: oft etwas humoristisch,

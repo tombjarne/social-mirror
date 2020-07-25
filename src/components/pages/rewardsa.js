@@ -24,7 +24,7 @@ class Rewardsa extends React.Component {
                         <div id="hero-cta">
                             <div className="profile-wrapper">
                                 <h2>Glückwunsch! Genieße deinen Preis!</h2>
-                                <img className="qr-code" src={code} />
+                                <img alt="" className="qr-code" src={code} />
                                 <span className="txt-highlight red">1 x Geführte Wanderung!</span>
                                 <div className="spacing"></div>
                                 <Button className="helper-btn agree-btn" onClick={() => window.location.href="/rewards"}>Jetzt Reward abholen</Button>

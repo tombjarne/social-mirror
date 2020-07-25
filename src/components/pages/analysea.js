@@ -63,7 +63,7 @@ class Analysea extends React.Component {
                     <div className="wrapper">
                         <div id="hero-cta">
                             <div className="profile-wrapper">
-                                <img className="profile-img" src={logan}/>
+                                <img alt="" className="profile-img" src={logan}/>
                                 <h2>Logan Paul</h2>
                                 <span className="highlight">18,2 Mio. Follower</span>
                             </div>
@@ -110,7 +110,7 @@ class Analysea extends React.Component {
                                     <h3 className="txt-highlight mid">Keine Jugendfreie Inhalte</h3>
                                     <h3 className="txt-highlight bad">Suizid<span className="info-box-helper" onClick={this.handleOpen}>i</span></h3>
                                     {
-                                        this.state.clicked == true &&
+                                        this.state.clicked === true &&
                                         (
                                             <Modal.Dialog>
                                                 <Modal.Header closeButton onClick={this.handleClose}>
@@ -121,13 +121,13 @@ class Analysea extends React.Component {
                                                     <p>{this.state.text}</p>
                                                     <div className="play-slim">
                                                         {
-                                                            this.state.age == false &&
+                                                            this.state.age === false &&
                                                             (
                                                                 <Button onClick={this.showVideo} className="accept-btn">Alter bestätigen um Video anzusehen</Button>
                                                             )
                                                         }
                                                         {
-                                                            this.state.age == true &&
+                                                            this.state.age === true &&
                                                             (
                                                                 <ReactPlayer id="video-player-slim" url={this.state.url} />
                                                             )
@@ -144,7 +144,7 @@ class Analysea extends React.Component {
                             <p className="info-box">Aufteilung</p>
                         </div>
                         <div className="chart-container">
-                            <img src={chart} className="chart" />
+                            <img alt="" src={chart} className="chart" />
                             <h3>Fazit</h3>
                             <p className="centered">Logan Paul ist ein eher als gefährlich einzustufender Influencer.
                                 Nahezu alle seiner Beiträge werden mit einen Link oder einem gesponsertem Produkt versehen. Des Weiteren stellt er gerne kontroverse und

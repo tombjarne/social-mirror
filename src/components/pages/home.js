@@ -95,7 +95,7 @@ class Home extends React.Component {
                                 Abhängigkeiten, sowie die Vergötterung von Social Media Stars können die Folgen sein.
                             </p>
                         </div>
-                        <Button href="#claim" className="helper-btn cta-a">Erfahre mehr</Button>
+                        <Button className="helper-btn cta" onClick={() => window.location.href="./wissen/social-media"}>Erfahre mehr</Button>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@ class Home extends React.Component {
                                 Erfahre mehr über den Beruf eines Influencers und lerne verschiedene Seiten der Arbeit auf Social Media kennen.
                             </p>
                         </div>
-                        <Button href="./" className="helper-btn cta-a">Erfahre mehr</Button>
+                        <Button className="helper-btn cta" onClick={() => window.location.href="./wissen/influencer"}>Erfahre mehr</Button>
                     </div>
                 </div>
                 <div className="info">

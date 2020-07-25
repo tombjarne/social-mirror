@@ -1,12 +1,5 @@
 import React from "react";
 
-import Button from "react-bootstrap/Button";
-import happy from "../../assets/img/happy-symbol.png";
-import ad from "../../assets/img/werbung-symbol.png";
-import money from "../../assets/img/euro-symbol.png";
-import ex1 from "../../assets/img/instagram-example-1.jpg";
-import ex2 from "../../assets/img/instagram-example-2.jpg";
-import FormControl from "react-bootstrap/FormControl";
 import ReactPlayer from "react-player";
 
 class Influencers extends React.Component {

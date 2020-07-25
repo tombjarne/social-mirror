@@ -9,8 +9,6 @@ import trophy from "../../assets/img/trophy.png";
 import cert from "../../assets/img/certificate.png";
 import user_graph from "../../assets/img/profile-graph.png";
 import Button from "react-bootstrap/Button";
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
 
 class Analyse extends React.Component {
 
@@ -72,22 +70,14 @@ class Analyse extends React.Component {
                     <div className="wrapper">
                         <div id="hero-cta">
                             <div className="profile-wrapper">
-                                <img className="profile-img" src={user}/>
+                                <img alt="" className="profile-img" src={user}/>
                                 <h2>Jon Doe</h2>
                                 <span className="highlight">3:37h letzte Woche</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Accordion defaultActiveKey="1">
-                    <Card>
-                        <Card.Header>
-                            <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                Aktivitätsauswertung
-                            </Accordion.Toggle>
-                        </Card.Header>
-                        <Accordion.Collapse eventKey="0">
-                            <Card.Body>
+
                                 <div id="demo">
                                     <div className="claim-overlay"></div>
                                     <div className="wrapper">
@@ -133,7 +123,7 @@ class Analyse extends React.Component {
                                             <p className="info-box">Aufteilung</p>
                                         </div>
                                         <div className="chart-container">
-                                            <img src={user_chart} className="chart" />
+                                            <img alt=""src={user_chart} className="chart" />
                                             <h3>Fazit</h3>
                                             <p className="centered">
                                                 Gut gemacht! Du hast letzte Woche deine Gesamtzeit auf den sozialen Medien verringert!
@@ -143,7 +133,7 @@ class Analyse extends React.Component {
                                             <p className="info-box">Detail</p>
                                         </div>
                                         <div className="chart-container">
-                                            <img src={user_graph} className="chart" />
+                                            <img alt=""src={user_graph} className="chart" />
                                             <div className="legend">
                                                 <p id="fb" >Facebook</p>
                                                 <p id="in" >Instagram</p>
@@ -165,9 +155,6 @@ class Analyse extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
 
                     <div className="info-bright">
                         <div className="claim-overlay"></div>
@@ -214,7 +201,6 @@ class Analyse extends React.Component {
                             </div>
                         </div>
                     </div>
-                </Accordion>
             </section>
         );
     }

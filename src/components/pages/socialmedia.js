@@ -13,7 +13,9 @@ import tiktok from "../../assets/img/tiktok-logo.png";
 import reddit from "../../assets/img/reddit.png";
 import mightynetworks from "../../assets/img/mightynetworks.png";
 import meetup from "../../assets/img/Meetup_Logo.png";
+import snapchat from "../../assets/img/Ghost Logo - Primary.png";
 import localpost from "../../assets/img/localpost.png";
+import ReactPlayer from "react-player";
 
 class SocialMedia extends React.Component {
 
@@ -117,7 +119,7 @@ class SocialMedia extends React.Component {
                             <div id="comparison" className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={twitter}/>
+                                        <img alt="" className="image-icon" src={twitter}/>
                                     </div>
                                     <p className="txt-highlight">Twitter</p>
                                     <div className="social-media-ranking">
@@ -134,9 +136,12 @@ class SocialMedia extends React.Component {
                                         <li>Meinungen teilen</li>
                                     </ul>
                                 </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=qx1mBwLtDGk" />
+                                </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={instagram}/>
+                                        <img alt="" className="image-icon" src={instagram}/>
                                     </div>
                                     <p className="txt-highlight">Instagram</p>
                                     <div className="social-media-ranking">
@@ -151,9 +156,12 @@ class SocialMedia extends React.Component {
                                         <li>Kommentieren & Liken</li>
                                     </ul>
                                 </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=3LaJMkBW8KM" />
+                                </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={youtube}/>
+                                        <img alt="" className="image-icon" src={youtube}/>
                                     </div>
                                     <p className="txt-highlight">YouTube</p>
                                     <div className="social-media-ranking">
@@ -170,11 +178,36 @@ class SocialMedia extends React.Component {
                                         <li>Inhalte selbst erstellen</li>
                                     </ul>
                                 </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=F22anVqciYI" />
+                                </div>
+                                <div className="image-container">
+                                    <div>
+                                        <img alt="" className="image-icon" src={snapchat}/>
+                                    </div>
+                                    <p className="txt-highlight">Snapchat</p>
+                                    <div className="social-media-ranking">
+                                        <h3 className="txt-highlight good">Sehr große Auswahl</h3>
+                                        <h3 className="txt-highlight mid">Anstößige Inhalte</h3>
+                                        <h3 className="txt-highlight mid">Niedrige Hemmschwelle</h3>
+                                        <h3 className="txt-highlight mid">Potenziell Unsicher</h3>
+                                        <h3 className="txt-highlight bad">Profitorientiert</h3>
+                                    </div>
+                                    <ul className="slim-list">
+                                        <li>Videos</li>
+                                        <li>Führende Werbeplattform</li>
+                                        <li>Kommentieren & Liken</li>
+                                        <li>Inhalte selbst erstellen</li>
+                                    </ul>
+                                </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=WDrxHiJmY8k&t" />
+                                </div>
                             </div>
                             <div className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={facebook}/>
+                                        <img alt="" className="image-icon" src={facebook}/>
                                     </div>
                                     <p className="txt-highlight">Facebook</p>
                                     <div className="social-media-ranking">
@@ -191,9 +224,12 @@ class SocialMedia extends React.Component {
                                         <li>Erstellen eigener Seiten</li>
                                     </ul>
                                 </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=n-YDvo_X2Jc" />
+                                </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={tiktok}/>
+                                        <img alt="" className="image-icon" src={tiktok}/>
                                     </div>
                                     <p className="txt-highlight">TikTok</p>
                                     <div className="social-media-ranking">
@@ -210,9 +246,12 @@ class SocialMedia extends React.Component {
                                         <li>Selbst Inhalte erstellen</li>
                                     </ul>
                                 </div>
+                                <div className="play">
+                                    <ReactPlayer id="video-player" url="https://www.youtube.com/watch?v=B1QEdWOnGSg" />
+                                </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={reddit}/>
+                                        <img alt="" className="image-icon" src={reddit}/>
                                     </div>
                                     <p className="txt-highlight">Reddit</p>
                                     <div className="social-media-ranking">
@@ -232,7 +271,7 @@ class SocialMedia extends React.Component {
                                 </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={mightynetworks}/>
+                                        <img alt="" className="image-icon" src={mightynetworks}/>
                                     </div>
                                     <h3 className="txt-highlight">MightyNetworks</h3>
                                     <div className="social-media-ranking">
@@ -252,7 +291,7 @@ class SocialMedia extends React.Component {
                                 </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={meetup}/>
+                                        <img alt="" className="image-icon" src={meetup}/>
                                     </div>
                                     <h3 className="txt-highlight">Meetup</h3>
                                     <div className="social-media-ranking">
@@ -269,7 +308,7 @@ class SocialMedia extends React.Component {
                                 </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={localpost}/>
+                                        <img alt="" className="image-icon" src={localpost}/>
                                     </div>
                                     <h3 className="txt-highlight">local post</h3>
                                     <div className="social-media-ranking">

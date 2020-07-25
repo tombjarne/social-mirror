@@ -95,12 +95,12 @@ class Recommendations extends React.Component {
                             <div id="plattformen" className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={facebook}/>
+                                        <img alt=""className="image-icon" src={facebook}/>
                                     </div>
                                     <h3 className="txt-highlight">Facebook SocialGroups</h3>
                                 </div>
                                 <div className="img-container">
-                                    <img className="small-img" src={socialgroups}/>
+                                    <img alt=""className="small-img" src={socialgroups}/>
                                 </div>
                                 <ul className="slim-list">
                                     <li>Meetups erstellen & neue Leute treffen</li>
@@ -111,12 +111,12 @@ class Recommendations extends React.Component {
                                     realen Leben einstellen.</p>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={youtube}/>
+                                        <img alt=""className="image-icon" src={youtube}/>
                                     </div>
                                     <h3 className="txt-highlight">YouTube Newcomer Feature</h3>
                                 </div>
                                 <div className="img-container">
-                                    <img className="small-img" src={newcomer}/>
+                                    <img alt=""className="small-img" src={newcomer}/>
                                 </div>
                                 <ul className="slim-list">
                                     <li>Neue, kreative Inhalt entdecken</li>
@@ -133,7 +133,7 @@ class Recommendations extends React.Component {
                             <div id="comparison" className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={mightynetworks}/>
+                                        <img alt=""className="image-icon" src={mightynetworks}/>
                                     </div>
                                     <h3 className="txt-highlight">MightyNetworks</h3>
                                     <p className="slim-text">Ein Registrieren bei MightyNetworks ist besonders für Personen sinnvoll, die sich mit spezifischen
@@ -142,7 +142,7 @@ class Recommendations extends React.Component {
                                 </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={meetup}/>
+                                        <img alt=""className="image-icon" src={meetup}/>
                                     </div>
                                     <h3 className="txt-highlight">Meetup</h3>
                                     <p className="slim-text">Ein Registrieren bei Meetup ist besonders für ehrgeizige und enthusiastische Personen ratsam. Für nahezu
@@ -151,7 +151,7 @@ class Recommendations extends React.Component {
                                 </div>
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={localpost}/>
+                                        <img alt=""className="image-icon" src={localpost}/>
                                     </div>
                                     <h3 className="txt-highlight">local post</h3>
                                     <p className="slim-text">Ein Registrieren bei local post ist besonders für Junge und heimatverwurzelte Menschen empfehlenswert.

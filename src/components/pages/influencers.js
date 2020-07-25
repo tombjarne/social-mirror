@@ -135,10 +135,10 @@ class Influencers extends React.Component {
                                 vom Influencer geschickt platziert wird. Hier ein Beispiel hierzu
                             </p>
                             <div className="img-container">
-                                <img className="small-img" src={ex1}/>
+                                <img alt="" className="small-img" src={ex1}/>
                             </div>
                             <div className="img-container">
-                                <img className="small-img" src={ex2}/>
+                                <img alt="" className="small-img" src={ex2}/>
                             </div>
                             <p className="slim-text">
                                 Die obige Produktpräsentation wirkt deutlich natürlicher und gewohnter, obwohl das ganze Szenario gestellt ist. Oft sind Influencer einen ganzen Tag damit

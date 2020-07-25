@@ -15,8 +15,6 @@ class Test extends React.Component {
     constructor(props) {
         super(props);
 
-        var score = 0;
-
         this.state = {
             e1: false,
             e2: false,
@@ -168,19 +166,19 @@ class Test extends React.Component {
                         <div className="image-container-wrapper">
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={twitter}/>
+                                    <img alt="" className="image-icon" src={twitter}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(100,9)} >Twitter</Button>
                             </div>
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={instagram}/>
+                                    <img alt="" className="image-icon" src={instagram}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(1000,9)} >Instagram</Button>
                             </div>
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={youtube}/>
+                                    <img alt="" className="image-icon" src={youtube}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(10,9)} >YouTube</Button>
                             </div>
@@ -188,19 +186,19 @@ class Test extends React.Component {
                         <div className="image-container-wrapper">
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={facebook}/>
+                                    <img alt="" className="image-icon" src={facebook}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(10,9)} >Facebook</Button>
                             </div>
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={tiktok}/>
+                                    <img alt="" className="image-icon" src={tiktok}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(1000,9)} >TikTok</Button>
                             </div>
                             <div className="image-container">
                                 <div>
-                                    <img className="image-icon" src={reddit}/>
+                                    <img alt="" className="image-icon" src={reddit}/>
                                 </div>
                                 <Button className="test-btn" onClick={() => this.setChosen(100,9)} >Reddit</Button>
                             </div>
@@ -346,7 +344,7 @@ class Test extends React.Component {
 
 
     setChosen(value, ref) {
-        if(this.state.previousref == ref && ref < 9){
+        if(this.state.previousref === ref && ref < 9){
 
             this.setState({
                 highlighted: true,
@@ -431,7 +429,7 @@ class Test extends React.Component {
                     <div className="question">
                         {this.state.pages[this.state.current -1]}
                         {
-                            this.state.current == 15 && this.state.score > 10 &&
+                            this.state.current === 15 && this.state.score > 10 &&
                             (
                                 <div>
                                     <section className="question-container">
@@ -513,7 +511,7 @@ class Test extends React.Component {
                             )
                         }
                         {
-                            this.state.current == 15 && this.state.score < 10 &&
+                            this.state.current === 15 && this.state.score < 10 &&
                             (
                                 <div>
                                     <section className="question-container">

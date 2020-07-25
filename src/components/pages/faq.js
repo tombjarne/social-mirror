@@ -1,8 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import money from "../../assets/img/money-check-alt-solid.svg";
-import Sidebar from "../sidebar";
-import Tooltip from "react-bootstrap/Tooltip";
+
 import Button from "react-bootstrap/Button";
 
 class Knowledge extends React.Component {

@@ -2,14 +2,6 @@ import React from "react";
 
 import Button from "react-bootstrap/Button";
 import exclamation from "../../assets/img/exclamation.png";
-import friendship from "../../assets/img/happy-symbol.png";
-
-import twitter from "../../assets/img/twitter.png";
-import instagram from "../../assets/img/instagram.png";
-import youtube from "../../assets/img/yt_icon_rgb.png";
-import facebook from "../../assets/img/facebook.png";
-import tiktok from "../../assets/img/tiktok-logo.png";
-import reddit from "../../assets/img/reddit.png";
 
 class Dangers extends React.Component {
 
@@ -200,7 +192,7 @@ class Dangers extends React.Component {
                             <div className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={exclamation}/>
+                                        <img alt="" className="image-icon" src={exclamation}/>
                                     </div>
                                     <p className="txt-highlight good">Umgib dich mit verschiedenen Menschen</p>
                                     <ul className="slim-list">
@@ -220,7 +212,7 @@ class Dangers extends React.Component {
                             <div className="image-container-wrapper">
                                 <div className="image-container">
                                     <div>
-                                        <img className="image-icon" src={exclamation}/>
+                                        <img alt="" className="image-icon" src={exclamation}/>
                                     </div>
                                     <p className="txt-highlight good">Freundschaften auf den sozialen Medien dürfen in keinem Fall
                                     deine echten Freundschaften ersetzen!
